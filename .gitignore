@@ -59,3 +59,9 @@ token.pickle
 *.db
 *.sqlite
 knowledge_base/database/
+
+# Database files
+*.sqlite3
+*.db
+*.sqlite
+knowledge_base/database/
