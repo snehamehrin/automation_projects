@@ -1,0 +1,39 @@
+case_study_template:
+  sections:
+    - title: "Executive Summary"
+      description: "Brief overview of the case study"
+      required: true
+    - title: "Background"
+      description: "Context and history of the subject"
+      required: true
+    - title: "Challenge"
+      description: "Main problem or opportunity addressed"
+      required: true
+    - title: "Solution"
+      description: "Approach and implementation"
+      required: true
+    - title: "Results"
+      description: "Outcomes and impact"
+      required: true
+    - title: "Key Learnings"
+      description: "Main takeaways and insights"
+      required: true
+
+research_prompts:
+  gemini:
+    - "Provide detailed information about {topic}"
+    - "What are the key challenges in {topic}?"
+    - "What are the best practices for {topic}?"
+    - "What are the latest trends in {topic}?"
+
+synthesis_prompts:
+  openai:
+    - "Identify the main themes from the research"
+    - "Extract key insights and patterns"
+    - "Summarize the most important findings"
+    - "Highlight unique or innovative aspects"
+
+output_format:
+  yaml:
+    indent: 2
+    sort_keys: true 

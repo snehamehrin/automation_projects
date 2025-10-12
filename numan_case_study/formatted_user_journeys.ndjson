@@ -1,0 +1,733 @@
+{"event_name": "care_journey_entry_initiated", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:37:12.465704", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:38:12.465704", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:39:12.465704", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:40:12.465704", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:41:12.465704", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:43:12.465704", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:44:12.465704", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:45:12.465704", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "ec935fcb-fcba-47ba-87fb-d8ddb0d3487f", "time": "2025-04-14T04:46:12.465704", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:37:12.465996", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:40:12.465996", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:41:12.465996", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:43:12.465996", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:45:12.465996", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:46:12.465996", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:47:12.465996", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:49:12.465996", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "787ab75b-b866-4a39-a17d-ec0b70cbf380", "time": "2025-04-14T04:50:12.465996", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "b8ad7918-cd3f-4b50-bafe-3e8f0ec4da81", "time": "2025-04-14T04:37:12.466208", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "b8ad7918-cd3f-4b50-bafe-3e8f0ec4da81", "time": "2025-04-14T04:39:12.466208", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "b8ad7918-cd3f-4b50-bafe-3e8f0ec4da81", "time": "2025-04-14T04:41:12.466208", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b8ad7918-cd3f-4b50-bafe-3e8f0ec4da81", "time": "2025-04-14T04:43:12.466208", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b8ad7918-cd3f-4b50-bafe-3e8f0ec4da81", "time": "2025-04-14T04:45:12.466208", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b8ad7918-cd3f-4b50-bafe-3e8f0ec4da81", "time": "2025-04-14T04:46:12.466208", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "b8ad7918-cd3f-4b50-bafe-3e8f0ec4da81", "time": "2025-04-14T04:48:12.466208", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "1b77599a-65fe-49ed-9806-3e681a1ceb3c", "time": "2025-04-14T04:37:12.466535", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "1b77599a-65fe-49ed-9806-3e681a1ceb3c", "time": "2025-04-14T04:40:12.466535", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "1b77599a-65fe-49ed-9806-3e681a1ceb3c", "time": "2025-04-14T04:43:12.466535", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1b77599a-65fe-49ed-9806-3e681a1ceb3c", "time": "2025-04-14T04:45:12.466535", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1b77599a-65fe-49ed-9806-3e681a1ceb3c", "time": "2025-04-14T04:46:12.466535", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1b77599a-65fe-49ed-9806-3e681a1ceb3c", "time": "2025-04-14T04:47:12.466535", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "1b77599a-65fe-49ed-9806-3e681a1ceb3c", "time": "2025-04-14T04:48:12.466535", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:37:12.466730", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:38:12.466730", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:40:12.466730", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:42:12.466730", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:43:12.466730", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:45:12.466730", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:47:12.466730", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:49:12.466730", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "56958104-99cc-4e09-9e00-1689f3cf6c83", "time": "2025-04-14T04:50:12.466730", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "e952f559-7d5c-48de-907f-b3e41fe62ea7", "time": "2025-04-14T04:37:12.466859", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "e952f559-7d5c-48de-907f-b3e41fe62ea7", "time": "2025-04-14T04:38:12.466859", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e952f559-7d5c-48de-907f-b3e41fe62ea7", "time": "2025-04-14T04:40:12.466859", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e952f559-7d5c-48de-907f-b3e41fe62ea7", "time": "2025-04-14T04:42:12.466859", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e952f559-7d5c-48de-907f-b3e41fe62ea7", "time": "2025-04-14T04:44:12.466859", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "e952f559-7d5c-48de-907f-b3e41fe62ea7", "time": "2025-04-14T04:45:12.466859", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:37:12.466974", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:38:12.466974", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:40:12.466974", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:42:12.466974", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:43:12.466974", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:44:12.466974", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:46:12.466974", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:48:12.466974", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "52d8a610-2f02-48d6-88eb-6d5ab396af8c", "time": "2025-04-14T04:50:12.466974", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:37:12.467272", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:38:12.467272", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:41:12.467272", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:43:12.467272", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:45:12.467272", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:47:12.467272", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:48:12.467272", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:49:12.467272", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:50:12.467272", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "e1c39c8c-ffc3-4b32-aa66-a47974863e9c", "time": "2025-04-14T04:51:12.467272", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "c7b7b7d4-f4ea-4740-9b1b-9a5c532c4c20", "time": "2025-04-14T04:37:12.467503", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "c7b7b7d4-f4ea-4740-9b1b-9a5c532c4c20", "time": "2025-04-14T04:38:12.467503", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c7b7b7d4-f4ea-4740-9b1b-9a5c532c4c20", "time": "2025-04-14T04:39:12.467503", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c7b7b7d4-f4ea-4740-9b1b-9a5c532c4c20", "time": "2025-04-14T04:41:12.467503", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c7b7b7d4-f4ea-4740-9b1b-9a5c532c4c20", "time": "2025-04-14T04:43:12.467503", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "c7b7b7d4-f4ea-4740-9b1b-9a5c532c4c20", "time": "2025-04-14T04:45:12.467503", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "61256fd8-e22a-4bbf-8a09-2711a918d05f", "time": "2025-04-14T04:37:12.467562", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "61256fd8-e22a-4bbf-8a09-2711a918d05f", "time": "2025-04-14T04:38:12.467562", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "61256fd8-e22a-4bbf-8a09-2711a918d05f", "time": "2025-04-14T04:40:12.467562", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "61256fd8-e22a-4bbf-8a09-2711a918d05f", "time": "2025-04-14T04:42:12.467562", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "61256fd8-e22a-4bbf-8a09-2711a918d05f", "time": "2025-04-14T04:43:12.467562", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "61256fd8-e22a-4bbf-8a09-2711a918d05f", "time": "2025-04-14T04:45:12.467562", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "61256fd8-e22a-4bbf-8a09-2711a918d05f", "time": "2025-04-14T04:47:12.467562", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "61256fd8-e22a-4bbf-8a09-2711a918d05f", "time": "2025-04-14T04:48:12.467562", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "5394005a-d621-47fa-aef7-28e194266231", "time": "2025-04-14T04:37:12.467618", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "5394005a-d621-47fa-aef7-28e194266231", "time": "2025-04-14T04:39:12.467618", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "5394005a-d621-47fa-aef7-28e194266231", "time": "2025-04-14T04:40:12.467618", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "5394005a-d621-47fa-aef7-28e194266231", "time": "2025-04-14T04:42:12.467618", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "5394005a-d621-47fa-aef7-28e194266231", "time": "2025-04-14T04:43:12.467618", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "5394005a-d621-47fa-aef7-28e194266231", "time": "2025-04-14T04:44:12.467618", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "bd1ce12a-5365-4341-9c43-2750ddc86f17", "time": "2025-04-14T04:37:12.467664", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "bd1ce12a-5365-4341-9c43-2750ddc86f17", "time": "2025-04-14T04:40:12.467664", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "bd1ce12a-5365-4341-9c43-2750ddc86f17", "time": "2025-04-14T04:42:12.467664", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "bd1ce12a-5365-4341-9c43-2750ddc86f17", "time": "2025-04-14T04:43:12.467664", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "bd1ce12a-5365-4341-9c43-2750ddc86f17", "time": "2025-04-14T04:44:12.467664", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "bd1ce12a-5365-4341-9c43-2750ddc86f17", "time": "2025-04-14T04:46:12.467664", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "bd1ce12a-5365-4341-9c43-2750ddc86f17", "time": "2025-04-14T04:48:12.467664", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "bd1ce12a-5365-4341-9c43-2750ddc86f17", "time": "2025-04-14T04:49:12.467664", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "77771cbd-d884-4154-a90b-34115138b7d3", "time": "2025-04-14T04:37:12.467714", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "77771cbd-d884-4154-a90b-34115138b7d3", "time": "2025-04-14T04:38:12.467714", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77771cbd-d884-4154-a90b-34115138b7d3", "time": "2025-04-14T04:39:12.467714", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77771cbd-d884-4154-a90b-34115138b7d3", "time": "2025-04-14T04:40:12.467714", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77771cbd-d884-4154-a90b-34115138b7d3", "time": "2025-04-14T04:42:12.467714", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "77771cbd-d884-4154-a90b-34115138b7d3", "time": "2025-04-14T04:43:12.467714", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "77771cbd-d884-4154-a90b-34115138b7d3", "time": "2025-04-14T04:45:12.467714", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "77771cbd-d884-4154-a90b-34115138b7d3", "time": "2025-04-14T04:47:12.467714", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:37:12.467783", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:40:12.467783", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:42:12.467783", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:44:12.467783", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:46:12.467783", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:48:12.467783", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:49:12.467783", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:50:12.467783", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "77231f56-49e0-4c37-b6d5-da9707a86d43", "time": "2025-04-14T04:51:12.467783", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:37:12.467838", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:38:12.467838", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:41:12.467838", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:42:12.467838", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:43:12.467838", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:45:12.467838", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:46:12.467838", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:47:12.467838", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:49:12.467838", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "503cd849-9e9f-4c24-b166-5f7296ab7b63", "time": "2025-04-14T04:50:12.467838", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:37:12.467914", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:40:12.467914", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:42:12.467914", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:44:12.467914", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:45:12.467914", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:46:12.467914", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:47:12.467914", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:49:12.467914", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "2844a340-9b36-4b07-b1e0-d22fa4654b2d", "time": "2025-04-14T04:51:12.467914", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "5ac5d40d-a94a-43b8-82ee-0666730b8c90", "time": "2025-04-14T04:37:12.468005", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:37:12.468020", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:39:12.468020", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:40:12.468020", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:41:12.468020", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:42:12.468020", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:43:12.468020", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:45:12.468020", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:46:12.468020", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "ac05aa5a-d83e-488a-9254-6303e8eedd7b", "time": "2025-04-14T04:47:12.468020", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:37:12.468087", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:38:12.468087", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:39:12.468087", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:40:12.468087", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:41:12.468087", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:42:12.468087", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:43:12.468087", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:45:12.468087", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "d9799bd1-ce87-4ca6-976d-7f9d6c6d97e4", "time": "2025-04-14T04:47:12.468087", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "8fc8b5c7-5a9c-416f-b387-02738efa5133", "time": "2025-04-14T04:37:12.468236", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "d2f3271f-aeca-4d94-a8a7-007e8a854ddd", "time": "2025-04-14T04:37:12.468314", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "d2f3271f-aeca-4d94-a8a7-007e8a854ddd", "time": "2025-04-14T04:39:12.468314", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "1c99912f-67bb-4843-8936-ea508f95e8d6", "time": "2025-04-14T04:37:12.468367", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "1c99912f-67bb-4843-8936-ea508f95e8d6", "time": "2025-04-14T04:40:12.468367", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1c99912f-67bb-4843-8936-ea508f95e8d6", "time": "2025-04-14T04:41:12.468367", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1c99912f-67bb-4843-8936-ea508f95e8d6", "time": "2025-04-14T04:43:12.468367", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1c99912f-67bb-4843-8936-ea508f95e8d6", "time": "2025-04-14T04:44:12.468367", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "1c99912f-67bb-4843-8936-ea508f95e8d6", "time": "2025-04-14T04:45:12.468367", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "23d6eae4-daee-4f81-a19d-eeffe8f4e6c2", "time": "2025-04-14T04:37:12.468467", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:37:12.468505", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:38:12.468505", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:39:12.468505", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:40:12.468505", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:41:12.468505", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:42:12.468505", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:44:12.468505", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:45:12.468505", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "3d387243-136a-48f0-bd31-9945a4f44b00", "time": "2025-04-14T04:46:12.468505", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:37:12.468599", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:39:12.468599", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:41:12.468599", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:43:12.468599", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:44:12.468599", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:46:12.468599", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:47:12.468599", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:48:12.468599", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "68c83ee6-8b3e-4ebe-aec9-30872d184f5b", "time": "2025-04-14T04:50:12.468599", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "d4a7968b-8de3-413f-b724-dd5d6448713a", "time": "2025-04-14T04:37:12.468692", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "d4a7968b-8de3-413f-b724-dd5d6448713a", "time": "2025-04-14T04:38:12.468692", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "77f38841-2918-403d-9cf6-8fa8607b9245", "time": "2025-04-14T04:37:12.468740", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "77f38841-2918-403d-9cf6-8fa8607b9245", "time": "2025-04-14T04:38:12.468740", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77f38841-2918-403d-9cf6-8fa8607b9245", "time": "2025-04-14T04:39:12.468740", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77f38841-2918-403d-9cf6-8fa8607b9245", "time": "2025-04-14T04:41:12.468740", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "77f38841-2918-403d-9cf6-8fa8607b9245", "time": "2025-04-14T04:42:12.468740", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "77f38841-2918-403d-9cf6-8fa8607b9245", "time": "2025-04-14T04:43:12.468740", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "77f38841-2918-403d-9cf6-8fa8607b9245", "time": "2025-04-14T04:45:12.468740", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "77f38841-2918-403d-9cf6-8fa8607b9245", "time": "2025-04-14T04:47:12.468740", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:37:12.468833", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:40:12.468833", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:41:12.468833", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:43:12.468833", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:44:12.468833", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:45:12.468833", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:47:12.468833", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:48:12.468833", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "4896916b-8822-490f-bf72-b380fead2b62", "time": "2025-04-14T04:49:12.468833", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:37:12.468926", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:40:12.468926", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:42:12.468926", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:44:12.468926", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:46:12.468926", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:48:12.468926", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:49:12.468926", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:50:12.468926", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:52:12.468926", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "e23220c4-0fe2-4951-93ba-c307d0dba84a", "time": "2025-04-14T04:54:12.468926", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "28feb510-e29f-4e2c-830d-b208d474375d", "time": "2025-04-14T04:37:12.469027", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "28feb510-e29f-4e2c-830d-b208d474375d", "time": "2025-04-14T04:40:12.469027", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "28feb510-e29f-4e2c-830d-b208d474375d", "time": "2025-04-14T04:42:12.469027", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "28feb510-e29f-4e2c-830d-b208d474375d", "time": "2025-04-14T04:44:12.469027", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "28feb510-e29f-4e2c-830d-b208d474375d", "time": "2025-04-14T04:45:12.469027", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "28feb510-e29f-4e2c-830d-b208d474375d", "time": "2025-04-14T04:46:12.469027", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "afa279bb-4347-499a-808d-316b245eeb3e", "time": "2025-04-14T04:37:12.469105", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "afa279bb-4347-499a-808d-316b245eeb3e", "time": "2025-04-14T04:38:12.469105", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "afa279bb-4347-499a-808d-316b245eeb3e", "time": "2025-04-14T04:39:12.469105", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "afa279bb-4347-499a-808d-316b245eeb3e", "time": "2025-04-14T04:41:12.469105", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "afa279bb-4347-499a-808d-316b245eeb3e", "time": "2025-04-14T04:42:12.469105", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "afa279bb-4347-499a-808d-316b245eeb3e", "time": "2025-04-14T04:43:12.469105", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "afa279bb-4347-499a-808d-316b245eeb3e", "time": "2025-04-14T04:45:12.469105", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "afa279bb-4347-499a-808d-316b245eeb3e", "time": "2025-04-14T04:46:12.469105", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "3f868bb3-dff8-484e-9da9-be056376b243", "time": "2025-04-14T04:37:12.469201", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "3f868bb3-dff8-484e-9da9-be056376b243", "time": "2025-04-14T04:38:12.469201", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "3f868bb3-dff8-484e-9da9-be056376b243", "time": "2025-04-14T04:40:12.469201", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "3f868bb3-dff8-484e-9da9-be056376b243", "time": "2025-04-14T04:41:12.469201", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "3f868bb3-dff8-484e-9da9-be056376b243", "time": "2025-04-14T04:42:12.469201", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "3f868bb3-dff8-484e-9da9-be056376b243", "time": "2025-04-14T04:43:12.469201", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "21f2b9f9-382e-4341-963b-0c8e3ada44e1", "time": "2025-04-14T04:37:12.469295", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "21f2b9f9-382e-4341-963b-0c8e3ada44e1", "time": "2025-04-14T04:40:12.469295", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "21f2b9f9-382e-4341-963b-0c8e3ada44e1", "time": "2025-04-14T04:42:12.469295", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "21f2b9f9-382e-4341-963b-0c8e3ada44e1", "time": "2025-04-14T04:43:12.469295", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "21f2b9f9-382e-4341-963b-0c8e3ada44e1", "time": "2025-04-14T04:45:12.469295", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "21f2b9f9-382e-4341-963b-0c8e3ada44e1", "time": "2025-04-14T04:46:12.469295", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "21f2b9f9-382e-4341-963b-0c8e3ada44e1", "time": "2025-04-14T04:47:12.469295", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "21f2b9f9-382e-4341-963b-0c8e3ada44e1", "time": "2025-04-14T04:48:12.469295", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "7ec270a8-c022-4029-b1a5-9254f782a101", "time": "2025-04-14T04:37:12.469379", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "7ec270a8-c022-4029-b1a5-9254f782a101", "time": "2025-04-14T04:39:12.469379", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7ec270a8-c022-4029-b1a5-9254f782a101", "time": "2025-04-14T04:40:12.469379", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7ec270a8-c022-4029-b1a5-9254f782a101", "time": "2025-04-14T04:41:12.469379", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7ec270a8-c022-4029-b1a5-9254f782a101", "time": "2025-04-14T04:42:12.469379", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "7ec270a8-c022-4029-b1a5-9254f782a101", "time": "2025-04-14T04:43:12.469379", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "7ec270a8-c022-4029-b1a5-9254f782a101", "time": "2025-04-14T04:45:12.469379", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "7ec270a8-c022-4029-b1a5-9254f782a101", "time": "2025-04-14T04:46:12.469379", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:37:12.469462", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:40:12.469462", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:42:12.469462", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:43:12.469462", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:44:12.469462", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:46:12.469462", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:47:12.469462", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:49:12.469462", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "12d1b3ad-726b-4321-8dc4-b4a8904b5766", "time": "2025-04-14T04:51:12.469462", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "26f2438b-27a9-4c19-b840-4b3fa7826fc0", "time": "2025-04-14T04:37:12.469651", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "8600e655-8f6c-406a-8ab0-a1cb97c71edc", "time": "2025-04-14T04:37:12.469707", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "8600e655-8f6c-406a-8ab0-a1cb97c71edc", "time": "2025-04-14T04:40:12.469707", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "8600e655-8f6c-406a-8ab0-a1cb97c71edc", "time": "2025-04-14T04:41:12.469707", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "8600e655-8f6c-406a-8ab0-a1cb97c71edc", "time": "2025-04-14T04:42:12.469707", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "8600e655-8f6c-406a-8ab0-a1cb97c71edc", "time": "2025-04-14T04:43:12.469707", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "8600e655-8f6c-406a-8ab0-a1cb97c71edc", "time": "2025-04-14T04:45:12.469707", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "8600e655-8f6c-406a-8ab0-a1cb97c71edc", "time": "2025-04-14T04:47:12.469707", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:37:12.469789", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:40:12.469789", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:42:12.469789", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:44:12.469789", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:46:12.469789", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:48:12.469789", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:50:12.469789", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:51:12.469789", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "e5bea058-de63-434d-bb78-f752602ee31a", "time": "2025-04-14T04:53:12.469789", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "54a087be-6412-4caf-9ed7-ecf23d5bde8c", "time": "2025-04-14T04:37:12.469886", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "54a087be-6412-4caf-9ed7-ecf23d5bde8c", "time": "2025-04-14T04:38:12.469886", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "54a087be-6412-4caf-9ed7-ecf23d5bde8c", "time": "2025-04-14T04:39:12.469886", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "54a087be-6412-4caf-9ed7-ecf23d5bde8c", "time": "2025-04-14T04:41:12.469886", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "54a087be-6412-4caf-9ed7-ecf23d5bde8c", "time": "2025-04-14T04:43:12.469886", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "54a087be-6412-4caf-9ed7-ecf23d5bde8c", "time": "2025-04-14T04:44:12.469886", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:37:12.469966", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:39:12.469966", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:40:12.469966", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:42:12.469966", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:43:12.469966", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:44:12.469966", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:46:12.469966", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:48:12.469966", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "86cbf717-61ec-4db7-864c-91bdcd964221", "time": "2025-04-14T04:49:12.469966", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:37:12.470064", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:38:12.470064", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:39:12.470064", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:40:12.470064", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:42:12.470064", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:43:12.470064", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:45:12.470064", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:46:12.470064", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "f500a456-5afd-487b-9bd9-34557c712bc4", "time": "2025-04-14T04:48:12.470064", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:37:12.470167", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:38:12.470167", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:41:12.470167", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:42:12.470167", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:44:12.470167", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:45:12.470167", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:46:12.470167", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:48:12.470167", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "14654348-22fa-4148-9615-d5dfd7849a65", "time": "2025-04-14T04:49:12.470167", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "4526de87-11e6-4e03-a7b6-3e39f38d2649", "time": "2025-04-14T04:37:12.470264", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "4526de87-11e6-4e03-a7b6-3e39f38d2649", "time": "2025-04-14T04:38:12.470264", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4526de87-11e6-4e03-a7b6-3e39f38d2649", "time": "2025-04-14T04:40:12.470264", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4526de87-11e6-4e03-a7b6-3e39f38d2649", "time": "2025-04-14T04:42:12.470264", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4526de87-11e6-4e03-a7b6-3e39f38d2649", "time": "2025-04-14T04:44:12.470264", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "4526de87-11e6-4e03-a7b6-3e39f38d2649", "time": "2025-04-14T04:46:12.470264", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:37:12.470345", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:39:12.470345", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:41:12.470345", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:43:12.470345", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:44:12.470345", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:46:12.470345", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:48:12.470345", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:50:12.470345", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "10008c51-f770-4a96-a0fa-d851e5c4c4a6", "time": "2025-04-14T04:52:12.470345", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:37:12.470435", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:40:12.470435", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:41:12.470435", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:42:12.470435", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:43:12.470435", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:44:12.470435", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:46:12.470435", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:48:12.470435", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:50:12.470435", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "ec1fb5d3-66f9-45aa-b4d1-20f431abc248", "time": "2025-04-14T04:51:12.470435", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "c14ab919-b7de-43a6-b8fb-3c2649a4755b", "time": "2025-04-14T04:37:12.470528", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "c14ab919-b7de-43a6-b8fb-3c2649a4755b", "time": "2025-04-14T04:39:12.470528", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c14ab919-b7de-43a6-b8fb-3c2649a4755b", "time": "2025-04-14T04:40:12.470528", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c14ab919-b7de-43a6-b8fb-3c2649a4755b", "time": "2025-04-14T04:42:12.470528", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c14ab919-b7de-43a6-b8fb-3c2649a4755b", "time": "2025-04-14T04:44:12.470528", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "c14ab919-b7de-43a6-b8fb-3c2649a4755b", "time": "2025-04-14T04:45:12.470528", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "c14ab919-b7de-43a6-b8fb-3c2649a4755b", "time": "2025-04-14T04:47:12.470528", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "c14ab919-b7de-43a6-b8fb-3c2649a4755b", "time": "2025-04-14T04:49:12.470528", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:37:12.470609", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:39:12.470609", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:40:12.470609", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:42:12.470609", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:43:12.470609", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:45:12.470609", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:47:12.470609", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:49:12.470609", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "e92a6490-cd0b-4900-9c97-a1ba5f7bd435", "time": "2025-04-14T04:51:12.470609", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "4ec422cd-3f0d-4110-a8c2-63999ee58ea0", "time": "2025-04-14T04:37:12.470798", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:37:12.470836", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:39:12.470836", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:40:12.470836", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:42:12.470836", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:43:12.470836", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:45:12.470836", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:46:12.470836", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:48:12.470836", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "7cdfff96-0e56-41b3-ad21-435a09f03342", "time": "2025-04-14T04:50:12.470836", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:37:12.470929", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:39:12.470929", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:41:12.470929", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:42:12.470929", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:44:12.470929", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:45:12.470929", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:46:12.470929", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:48:12.470929", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:49:12.470929", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "b3b73ff8-ba27-4db1-972a-396901dc0013", "time": "2025-04-14T04:50:12.470929", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:37:12.471037", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:38:12.471037", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:39:12.471037", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:40:12.471037", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:41:12.471037", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:43:12.471037", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:44:12.471037", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:45:12.471037", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:47:12.471037", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "1f2434b7-4b3c-4b47-858c-0721a9a94479", "time": "2025-04-14T04:48:12.471037", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:37:12.471138", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:40:12.471138", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:41:12.471138", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:43:12.471138", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:44:12.471138", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:45:12.471138", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:47:12.471138", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:49:12.471138", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "c0325724-2b01-4ba3-be16-391b73d35e77", "time": "2025-04-14T04:50:12.471138", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:37:12.471249", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:40:12.471249", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:42:12.471249", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:43:12.471249", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:44:12.471249", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:46:12.471249", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:48:12.471249", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:49:12.471249", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "638280d2-f4ea-4761-9ff9-07b544be5770", "time": "2025-04-14T04:51:12.471249", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "993f2304-feb6-47ff-ba8e-7978776f19c4", "time": "2025-04-14T04:37:12.471340", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "993f2304-feb6-47ff-ba8e-7978776f19c4", "time": "2025-04-14T04:39:12.471340", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "993f2304-feb6-47ff-ba8e-7978776f19c4", "time": "2025-04-14T04:41:12.471340", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "993f2304-feb6-47ff-ba8e-7978776f19c4", "time": "2025-04-14T04:43:12.471340", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "993f2304-feb6-47ff-ba8e-7978776f19c4", "time": "2025-04-14T04:44:12.471340", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "993f2304-feb6-47ff-ba8e-7978776f19c4", "time": "2025-04-14T04:46:12.471340", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "4b52d987-fe27-43e1-b651-b1fe789bfc17", "time": "2025-04-14T04:37:12.471422", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "328756d1-6ae2-48d6-9625-6072c5ae25ab", "time": "2025-04-14T04:37:12.471460", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "328756d1-6ae2-48d6-9625-6072c5ae25ab", "time": "2025-04-14T04:39:12.471460", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "328756d1-6ae2-48d6-9625-6072c5ae25ab", "time": "2025-04-14T04:41:12.471460", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "328756d1-6ae2-48d6-9625-6072c5ae25ab", "time": "2025-04-14T04:43:12.471460", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "328756d1-6ae2-48d6-9625-6072c5ae25ab", "time": "2025-04-14T04:44:12.471460", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "328756d1-6ae2-48d6-9625-6072c5ae25ab", "time": "2025-04-14T04:45:12.471460", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:37:12.471549", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:39:12.471549", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:41:12.471549", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:42:12.471549", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:44:12.471549", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:46:12.471549", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:47:12.471549", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:49:12.471549", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "b9ec5ad7-cdb7-4c6a-ab7d-bf0127081a69", "time": "2025-04-14T04:51:12.471549", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:37:12.471641", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:40:12.471641", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:41:12.471641", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:42:12.471641", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:43:12.471641", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:44:12.471641", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:46:12.471641", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:47:12.471641", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "131031ac-b631-44bb-9d96-5f2c90211537", "time": "2025-04-14T04:49:12.471641", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:37:12.471731", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:38:12.471731", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:39:12.471731", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:40:12.471731", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:42:12.471731", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:44:12.471731", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:46:12.471731", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:48:12.471731", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:50:12.471731", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "b657f06f-87da-4416-9b8d-ee6cb1bcf767", "time": "2025-04-14T04:52:12.471731", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:37:12.471844", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:39:12.471844", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:42:12.471844", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:43:12.471844", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:44:12.471844", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:45:12.471844", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:46:12.471844", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:48:12.471844", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "0fe53f75-b8c4-48f1-b7d7-91d3c4812281", "time": "2025-04-14T04:50:12.471844", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:37:12.471954", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:39:12.471954", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:40:12.471954", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:41:12.471954", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:43:12.471954", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:44:12.471954", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:45:12.471954", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:47:12.471954", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:48:12.471954", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "52f24c50-21a2-42b0-a1f7-451062db62ad", "time": "2025-04-14T04:50:12.471954", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "beb52d39-5e8e-4c0c-9cca-51718340e932", "time": "2025-04-14T04:37:12.472054", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "beb52d39-5e8e-4c0c-9cca-51718340e932", "time": "2025-04-14T04:38:12.472054", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "beb52d39-5e8e-4c0c-9cca-51718340e932", "time": "2025-04-14T04:40:12.472054", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "beb52d39-5e8e-4c0c-9cca-51718340e932", "time": "2025-04-14T04:42:12.472054", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "beb52d39-5e8e-4c0c-9cca-51718340e932", "time": "2025-04-14T04:43:12.472054", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "beb52d39-5e8e-4c0c-9cca-51718340e932", "time": "2025-04-14T04:44:12.472054", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "9279da61-5df3-428f-b024-8d67aac7db9f", "time": "2025-04-14T04:37:12.472128", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "9279da61-5df3-428f-b024-8d67aac7db9f", "time": "2025-04-14T04:38:12.472128", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "9279da61-5df3-428f-b024-8d67aac7db9f", "time": "2025-04-14T04:39:12.472128", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "9279da61-5df3-428f-b024-8d67aac7db9f", "time": "2025-04-14T04:40:12.472128", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "9279da61-5df3-428f-b024-8d67aac7db9f", "time": "2025-04-14T04:41:12.472128", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "9279da61-5df3-428f-b024-8d67aac7db9f", "time": "2025-04-14T04:43:12.472128", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "b6bcfcdb-a1e5-4859-bd6d-3b40ae7ecb42", "time": "2025-04-14T04:37:12.472203", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "b6bcfcdb-a1e5-4859-bd6d-3b40ae7ecb42", "time": "2025-04-14T04:39:12.472203", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b6bcfcdb-a1e5-4859-bd6d-3b40ae7ecb42", "time": "2025-04-14T04:40:12.472203", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b6bcfcdb-a1e5-4859-bd6d-3b40ae7ecb42", "time": "2025-04-14T04:42:12.472203", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b6bcfcdb-a1e5-4859-bd6d-3b40ae7ecb42", "time": "2025-04-14T04:44:12.472203", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "b6bcfcdb-a1e5-4859-bd6d-3b40ae7ecb42", "time": "2025-04-14T04:46:12.472203", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:37:12.472283", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:39:12.472283", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:40:12.472283", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:41:12.472283", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:42:12.472283", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:44:12.472283", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:45:12.472283", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:46:12.472283", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "b0d64ea0-2e87-41dd-b901-42a5380eac64", "time": "2025-04-14T04:47:12.472283", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "c951c77b-324b-4e78-8f88-c63b439562d7", "time": "2025-04-14T04:37:12.472374", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "c951c77b-324b-4e78-8f88-c63b439562d7", "time": "2025-04-14T04:39:12.472374", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c951c77b-324b-4e78-8f88-c63b439562d7", "time": "2025-04-14T04:40:12.472374", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c951c77b-324b-4e78-8f88-c63b439562d7", "time": "2025-04-14T04:41:12.472374", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c951c77b-324b-4e78-8f88-c63b439562d7", "time": "2025-04-14T04:43:12.472374", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "c951c77b-324b-4e78-8f88-c63b439562d7", "time": "2025-04-14T04:45:12.472374", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "c951c77b-324b-4e78-8f88-c63b439562d7", "time": "2025-04-14T04:47:12.472374", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "c951c77b-324b-4e78-8f88-c63b439562d7", "time": "2025-04-14T04:48:12.472374", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "c0dee74a-de9c-445b-92ec-8e90a9392894", "time": "2025-04-14T04:37:12.472471", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "c0dee74a-de9c-445b-92ec-8e90a9392894", "time": "2025-04-14T04:40:12.472471", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c0dee74a-de9c-445b-92ec-8e90a9392894", "time": "2025-04-14T04:41:12.472471", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c0dee74a-de9c-445b-92ec-8e90a9392894", "time": "2025-04-14T04:43:12.472471", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "c0dee74a-de9c-445b-92ec-8e90a9392894", "time": "2025-04-14T04:44:12.472471", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "c0dee74a-de9c-445b-92ec-8e90a9392894", "time": "2025-04-14T04:45:12.472471", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:37:12.472544", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:38:12.472544", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:40:12.472544", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:42:12.472544", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:44:12.472544", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:45:12.472544", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:47:12.472544", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:49:12.472544", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:51:12.472544", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "fa10cd12-727c-4a48-92ee-bde6cc56c33d", "time": "2025-04-14T04:53:12.472544", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "4808000a-bc4c-4ce7-a715-5f790545192f", "time": "2025-04-14T04:37:12.472669", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "4808000a-bc4c-4ce7-a715-5f790545192f", "time": "2025-04-14T04:40:12.472669", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "4808000a-bc4c-4ce7-a715-5f790545192f", "time": "2025-04-14T04:42:12.472669", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4808000a-bc4c-4ce7-a715-5f790545192f", "time": "2025-04-14T04:44:12.472669", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4808000a-bc4c-4ce7-a715-5f790545192f", "time": "2025-04-14T04:45:12.472669", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "4808000a-bc4c-4ce7-a715-5f790545192f", "time": "2025-04-14T04:46:12.472669", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "4808000a-bc4c-4ce7-a715-5f790545192f", "time": "2025-04-14T04:47:12.472669", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "40327114-9a0e-4add-ae37-d8703c0f0287", "time": "2025-04-14T04:37:12.472743", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "40327114-9a0e-4add-ae37-d8703c0f0287", "time": "2025-04-14T04:39:12.472743", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "40327114-9a0e-4add-ae37-d8703c0f0287", "time": "2025-04-14T04:40:12.472743", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "40327114-9a0e-4add-ae37-d8703c0f0287", "time": "2025-04-14T04:42:12.472743", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "40327114-9a0e-4add-ae37-d8703c0f0287", "time": "2025-04-14T04:44:12.472743", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "40327114-9a0e-4add-ae37-d8703c0f0287", "time": "2025-04-14T04:46:12.472743", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:37:12.472801", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:39:12.472801", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:41:12.472801", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:43:12.472801", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:45:12.472801", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:46:12.472801", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:47:12.472801", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:49:12.472801", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "280fac50-c282-4d2a-bea2-8336fc0a27cc", "time": "2025-04-14T04:51:12.472801", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:37:12.472890", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:40:12.472890", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:41:12.472890", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:43:12.472890", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:44:12.472890", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:46:12.472890", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:47:12.472890", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:49:12.472890", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:50:12.472890", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "1d749780-72ea-4031-9193-d53c015664cc", "time": "2025-04-14T04:52:12.472890", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "d62ec2af-0cec-4b93-b955-066545101c53", "time": "2025-04-14T04:37:12.472982", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "d62ec2af-0cec-4b93-b955-066545101c53", "time": "2025-04-14T04:38:12.472982", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "d62ec2af-0cec-4b93-b955-066545101c53", "time": "2025-04-14T04:41:12.472982", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d62ec2af-0cec-4b93-b955-066545101c53", "time": "2025-04-14T04:43:12.472982", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d62ec2af-0cec-4b93-b955-066545101c53", "time": "2025-04-14T04:45:12.472982", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d62ec2af-0cec-4b93-b955-066545101c53", "time": "2025-04-14T04:47:12.472982", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "d62ec2af-0cec-4b93-b955-066545101c53", "time": "2025-04-14T04:48:12.472982", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:37:12.473052", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:38:12.473052", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:39:12.473052", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:41:12.473052", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:42:12.473052", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:43:12.473052", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:44:12.473052", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:45:12.473052", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "eb2205a3-4aa7-45da-8f6d-6e90fa2d9121", "time": "2025-04-14T04:46:12.473052", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:37:12.473132", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:40:12.473132", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:43:12.473132", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:45:12.473132", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:47:12.473132", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:48:12.473132", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:50:12.473132", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:51:12.473132", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "186c7dde-cd6b-43e1-a839-737091cade85", "time": "2025-04-14T04:52:12.473132", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "7688294e-f6e8-4bf0-8ec2-dee9f0c522f4", "time": "2025-04-14T04:37:12.473220", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "7688294e-f6e8-4bf0-8ec2-dee9f0c522f4", "time": "2025-04-14T04:39:12.473220", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7688294e-f6e8-4bf0-8ec2-dee9f0c522f4", "time": "2025-04-14T04:41:12.473220", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7688294e-f6e8-4bf0-8ec2-dee9f0c522f4", "time": "2025-04-14T04:42:12.473220", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "7688294e-f6e8-4bf0-8ec2-dee9f0c522f4", "time": "2025-04-14T04:44:12.473220", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "7688294e-f6e8-4bf0-8ec2-dee9f0c522f4", "time": "2025-04-14T04:46:12.473220", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "905d7b1b-9265-419e-9761-3fd0909ecc3f", "time": "2025-04-14T04:37:12.473280", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "905d7b1b-9265-419e-9761-3fd0909ecc3f", "time": "2025-04-14T04:39:12.473280", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "905d7b1b-9265-419e-9761-3fd0909ecc3f", "time": "2025-04-14T04:41:12.473280", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "905d7b1b-9265-419e-9761-3fd0909ecc3f", "time": "2025-04-14T04:43:12.473280", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "905d7b1b-9265-419e-9761-3fd0909ecc3f", "time": "2025-04-14T04:45:12.473280", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "905d7b1b-9265-419e-9761-3fd0909ecc3f", "time": "2025-04-14T04:46:12.473280", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "905d7b1b-9265-419e-9761-3fd0909ecc3f", "time": "2025-04-14T04:47:12.473280", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "905d7b1b-9265-419e-9761-3fd0909ecc3f", "time": "2025-04-14T04:48:12.473280", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "54431466-91ef-4610-9dad-23f0e6665506", "time": "2025-04-14T04:37:12.473373", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "54431466-91ef-4610-9dad-23f0e6665506", "time": "2025-04-14T04:39:12.473373", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "54431466-91ef-4610-9dad-23f0e6665506", "time": "2025-04-14T04:41:12.473373", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "54431466-91ef-4610-9dad-23f0e6665506", "time": "2025-04-14T04:43:12.473373", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "54431466-91ef-4610-9dad-23f0e6665506", "time": "2025-04-14T04:44:12.473373", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "54431466-91ef-4610-9dad-23f0e6665506", "time": "2025-04-14T04:46:12.473373", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "54431466-91ef-4610-9dad-23f0e6665506", "time": "2025-04-14T04:47:12.473373", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "54431466-91ef-4610-9dad-23f0e6665506", "time": "2025-04-14T04:49:12.473373", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "a2197f35-bb73-4277-98e8-471c8932db20", "time": "2025-04-14T04:37:12.473453", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "a2197f35-bb73-4277-98e8-471c8932db20", "time": "2025-04-14T04:39:12.473453", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "a2197f35-bb73-4277-98e8-471c8932db20", "time": "2025-04-14T04:41:12.473453", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "a2197f35-bb73-4277-98e8-471c8932db20", "time": "2025-04-14T04:42:12.473453", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "a2197f35-bb73-4277-98e8-471c8932db20", "time": "2025-04-14T04:44:12.473453", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "a2197f35-bb73-4277-98e8-471c8932db20", "time": "2025-04-14T04:45:12.473453", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "a2197f35-bb73-4277-98e8-471c8932db20", "time": "2025-04-14T04:46:12.473453", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:37:12.473527", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:40:12.473527", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:42:12.473527", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:44:12.473527", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:46:12.473527", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:48:12.473527", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:49:12.473527", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:50:12.473527", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "d5c5c218-1192-4f55-b112-b46f0b5676a0", "time": "2025-04-14T04:52:12.473527", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:37:12.473616", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:40:12.473616", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:41:12.473616", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:42:12.473616", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:44:12.473616", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:45:12.473616", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:47:12.473616", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:48:12.473616", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:49:12.473616", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "ff22ee3b-5592-4332-873b-7db3a9eef086", "time": "2025-04-14T04:51:12.473616", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:37:12.473711", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:38:12.473711", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:39:12.473711", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:40:12.473711", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:41:12.473711", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:42:12.473711", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:44:12.473711", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:45:12.473711", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "44281bd4-627e-4308-8e26-b55637cce419", "time": "2025-04-14T04:46:12.473711", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "71961641-24c7-4cc0-b918-8af8da983582", "time": "2025-04-14T04:37:12.473797", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "71961641-24c7-4cc0-b918-8af8da983582", "time": "2025-04-14T04:40:12.473797", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "71961641-24c7-4cc0-b918-8af8da983582", "time": "2025-04-14T04:42:12.473797", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "71961641-24c7-4cc0-b918-8af8da983582", "time": "2025-04-14T04:44:12.473797", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "71961641-24c7-4cc0-b918-8af8da983582", "time": "2025-04-14T04:46:12.473797", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "71961641-24c7-4cc0-b918-8af8da983582", "time": "2025-04-14T04:47:12.473797", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "71961641-24c7-4cc0-b918-8af8da983582", "time": "2025-04-14T04:48:12.473797", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "68f16b85-23fc-414a-b6f9-669e10d1abd3", "time": "2025-04-14T04:37:12.473875", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "68f16b85-23fc-414a-b6f9-669e10d1abd3", "time": "2025-04-14T04:39:12.473875", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "68f16b85-23fc-414a-b6f9-669e10d1abd3", "time": "2025-04-14T04:41:12.473875", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "68f16b85-23fc-414a-b6f9-669e10d1abd3", "time": "2025-04-14T04:43:12.473875", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "68f16b85-23fc-414a-b6f9-669e10d1abd3", "time": "2025-04-14T04:45:12.473875", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "68f16b85-23fc-414a-b6f9-669e10d1abd3", "time": "2025-04-14T04:46:12.473875", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "a93b22ff-bedd-4ed3-8465-dba3f07524f2", "time": "2025-04-14T04:37:12.473934", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "a93b22ff-bedd-4ed3-8465-dba3f07524f2", "time": "2025-04-14T04:39:12.473934", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "a93b22ff-bedd-4ed3-8465-dba3f07524f2", "time": "2025-04-14T04:41:12.473934", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "a93b22ff-bedd-4ed3-8465-dba3f07524f2", "time": "2025-04-14T04:42:12.473934", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "a93b22ff-bedd-4ed3-8465-dba3f07524f2", "time": "2025-04-14T04:44:12.473934", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "a93b22ff-bedd-4ed3-8465-dba3f07524f2", "time": "2025-04-14T04:46:12.473934", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "a93b22ff-bedd-4ed3-8465-dba3f07524f2", "time": "2025-04-14T04:47:12.473934", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "a93b22ff-bedd-4ed3-8465-dba3f07524f2", "time": "2025-04-14T04:48:12.473934", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:37:12.474111", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:39:12.474111", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:41:12.474111", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:42:12.474111", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:43:12.474111", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:45:12.474111", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:46:12.474111", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:47:12.474111", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "6479ba8b-0c5e-4a7c-84c5-1c88d44fecfb", "time": "2025-04-14T04:49:12.474111", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:37:12.474351", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:39:12.474351", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:41:12.474351", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:43:12.474351", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:45:12.474351", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:46:12.474351", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:47:12.474351", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:49:12.474351", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "008b05f6-506b-4b20-ad51-75dee3736ea9", "time": "2025-04-14T04:51:12.474351", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "c05b3190-04d3-4d37-8ce3-6e1b1348a88d", "time": "2025-04-14T04:37:12.474543", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "9385db49-5c81-4e40-8595-bb70fc7265d3", "time": "2025-04-14T04:37:12.474589", "event_properties": {"utm_content": "condition_tile_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "9385db49-5c81-4e40-8595-bb70fc7265d3", "time": "2025-04-14T04:39:12.474589", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "9385db49-5c81-4e40-8595-bb70fc7265d3", "time": "2025-04-14T04:40:12.474589", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "9385db49-5c81-4e40-8595-bb70fc7265d3", "time": "2025-04-14T04:42:12.474589", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "9385db49-5c81-4e40-8595-bb70fc7265d3", "time": "2025-04-14T04:43:12.474589", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "9385db49-5c81-4e40-8595-bb70fc7265d3", "time": "2025-04-14T04:44:12.474589", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:37:12.474642", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:39:12.474642", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:41:12.474642", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:42:12.474642", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:44:12.474642", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:45:12.474642", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:47:12.474642", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:49:12.474642", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "bd673fb6-d976-4ee8-a9af-4672d274f75d", "time": "2025-04-14T04:51:12.474642", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "f4cc24a0-b98b-42c7-96fe-0fd48157b4bf", "time": "2025-04-14T04:37:12.474863", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "f4cc24a0-b98b-42c7-96fe-0fd48157b4bf", "time": "2025-04-14T04:40:12.474863", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f4cc24a0-b98b-42c7-96fe-0fd48157b4bf", "time": "2025-04-14T04:41:12.474863", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f4cc24a0-b98b-42c7-96fe-0fd48157b4bf", "time": "2025-04-14T04:43:12.474863", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f4cc24a0-b98b-42c7-96fe-0fd48157b4bf", "time": "2025-04-14T04:44:12.474863", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "f4cc24a0-b98b-42c7-96fe-0fd48157b4bf", "time": "2025-04-14T04:46:12.474863", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "f4cc24a0-b98b-42c7-96fe-0fd48157b4bf", "time": "2025-04-14T04:47:12.474863", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "f4cc24a0-b98b-42c7-96fe-0fd48157b4bf", "time": "2025-04-14T04:49:12.474863", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "a52081a5-fed6-429f-8550-5adb90fef154", "time": "2025-04-14T04:37:12.474997", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "a52081a5-fed6-429f-8550-5adb90fef154", "time": "2025-04-14T04:39:12.474997", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:37:12.475048", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:39:12.475048", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:40:12.475048", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:41:12.475048", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:43:12.475048", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:45:12.475048", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:47:12.475048", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:49:12.475048", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "294c455a-3e1d-4ee8-ad46-90aa0a5633bc", "time": "2025-04-14T04:50:12.475048", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "e6f7b5a4-066a-4153-bfc0-7d7123ffbb5d", "time": "2025-04-14T04:37:12.475144", "event_properties": {"utm_content": "nav_dropdown_click", "user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:37:12.475173", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:40:12.475173", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:41:12.475173", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:43:12.475173", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:44:12.475173", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:46:12.475173", "event_properties": {"user_type": "guest"}}
+{"event_name": "test_booking_initiated", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:48:12.475173", "event_properties": {"user_type": "guest"}}
+{"event_name": "account_created_successfully", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:50:12.475173", "event_properties": {"user_type": "guest"}}
+{"event_name": "order_placed", "user_id": "09adadcf-721b-44da-b3df-21076ee47259", "time": "2025-04-14T04:51:12.475173", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "8a563142-13b3-4529-af9f-108d84dbc22b", "time": "2025-04-14T04:37:12.475257", "event_properties": {"utm_content": "carousel_cta_click", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "8a563142-13b3-4529-af9f-108d84dbc22b", "time": "2025-04-14T04:39:12.475257", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "8a563142-13b3-4529-af9f-108d84dbc22b", "time": "2025-04-14T04:40:12.475257", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "8a563142-13b3-4529-af9f-108d84dbc22b", "time": "2025-04-14T04:41:12.475257", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "8a563142-13b3-4529-af9f-108d84dbc22b", "time": "2025-04-14T04:42:12.475257", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "8a563142-13b3-4529-af9f-108d84dbc22b", "time": "2025-04-14T04:44:12.475257", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "8a563142-13b3-4529-af9f-108d84dbc22b", "time": "2025-04-14T04:45:12.475257", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "85f836a0-aa2e-48eb-b478-8852af566e0e", "time": "2025-04-14T04:37:12.475315", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "85f836a0-aa2e-48eb-b478-8852af566e0e", "time": "2025-04-14T04:40:12.475315", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "85f836a0-aa2e-48eb-b478-8852af566e0e", "time": "2025-04-14T04:41:12.475315", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "85f836a0-aa2e-48eb-b478-8852af566e0e", "time": "2025-04-14T04:42:12.475315", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "85f836a0-aa2e-48eb-b478-8852af566e0e", "time": "2025-04-14T04:44:12.475315", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "85f836a0-aa2e-48eb-b478-8852af566e0e", "time": "2025-04-14T04:45:12.475315", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "85f836a0-aa2e-48eb-b478-8852af566e0e", "time": "2025-04-14T04:46:12.475315", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "dd77f45d-4d6e-42dd-ac41-73f6d2e6b76b", "time": "2025-04-14T04:37:12.475381", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "dd77f45d-4d6e-42dd-ac41-73f6d2e6b76b", "time": "2025-04-14T04:38:12.475381", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "dd77f45d-4d6e-42dd-ac41-73f6d2e6b76b", "time": "2025-04-14T04:39:12.475381", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "dd77f45d-4d6e-42dd-ac41-73f6d2e6b76b", "time": "2025-04-14T04:40:12.475381", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "dd77f45d-4d6e-42dd-ac41-73f6d2e6b76b", "time": "2025-04-14T04:41:12.475381", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "dd77f45d-4d6e-42dd-ac41-73f6d2e6b76b", "time": "2025-04-14T04:42:12.475381", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "daf9ee10-b57e-4589-bacb-212d5f92d292", "time": "2025-04-14T04:37:12.475564", "event_properties": {"utm_content": "hero_banner", "user_type": "guest"}}
+{"event_name": "care_condition_topic_selected", "user_id": "daf9ee10-b57e-4589-bacb-212d5f92d292", "time": "2025-04-14T04:39:12.475564", "event_properties": {"utm_content": "condition_knowledge_click", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "daf9ee10-b57e-4589-bacb-212d5f92d292", "time": "2025-04-14T04:41:12.475564", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "daf9ee10-b57e-4589-bacb-212d5f92d292", "time": "2025-04-14T04:43:12.475564", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "daf9ee10-b57e-4589-bacb-212d5f92d292", "time": "2025-04-14T04:44:12.475564", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "daf9ee10-b57e-4589-bacb-212d5f92d292", "time": "2025-04-14T04:45:12.475564", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "daf9ee10-b57e-4589-bacb-212d5f92d292", "time": "2025-04-14T04:47:12.475564", "event_properties": {"user_type": "guest"}}
+{"event_name": "care_journey_entry_initiated", "user_id": "f95d0496-39cd-45b6-bf63-b1876ae637e8", "time": "2025-04-14T04:37:12.475626", "event_properties": {"utm_content": "explore_treatments_cta", "user_type": "guest"}}
+{"event_name": "questionnaire_started", "user_id": "f95d0496-39cd-45b6-bf63-b1876ae637e8", "time": "2025-04-14T04:38:12.475626", "event_properties": {"step_number": 0, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f95d0496-39cd-45b6-bf63-b1876ae637e8", "time": "2025-04-14T04:39:12.475626", "event_properties": {"step_number": 1, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f95d0496-39cd-45b6-bf63-b1876ae637e8", "time": "2025-04-14T04:41:12.475626", "event_properties": {"step_number": 2, "user_type": "guest"}}
+{"event_name": "questionnaire_step_submitted", "user_id": "f95d0496-39cd-45b6-bf63-b1876ae637e8", "time": "2025-04-14T04:43:12.475626", "event_properties": {"step_number": 3, "user_type": "guest"}}
+{"event_name": "questionnaire_completed", "user_id": "f95d0496-39cd-45b6-bf63-b1876ae637e8", "time": "2025-04-14T04:44:12.475626", "event_properties": {"user_type": "guest"}}
