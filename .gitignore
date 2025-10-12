@@ -53,3 +53,9 @@ logs/
 # API Keys and sensitive files
 google_console_key.json
 token.pickle
+
+# Database files
+*.sqlite3
+*.db
+*.sqlite
+knowledge_base/database/
