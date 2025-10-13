@@ -25,6 +25,7 @@ venv/
 .venv/
 env/
 .env/
+.pythonlibs/
 
 # Environment variables
 .env
