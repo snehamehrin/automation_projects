@@ -7,6 +7,7 @@ import asyncio
 import os
 import sys
 import json
+import logging
 from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Any
@@ -21,6 +22,17 @@ load_dotenv()
 import httpx
 from supabase import create_client, Client
 
+# Setup logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('scrape_reddit_simple.log'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
+
 
 class SimpleRedditScraper:
     """Scrape Reddit posts and comments with simplified schema."""
@@ -31,51 +43,59 @@ class SimpleRedditScraper:
         self.supabase_key = os.getenv("SUPABASE_KEY")
         
         if not self.apify_token:
+            logger.error("APIFY_API_KEY or APIFY_TOKEN not found")
             raise ValueError("APIFY_API_KEY or APIFY_TOKEN not found")
         if not self.supabase_url or not self.supabase_key:
+            logger.error("SUPABASE_URL and SUPABASE_KEY must be set")
             raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set")
         
         self.supabase = create_client(self.supabase_url, self.supabase_key)
         self.apify_base_url = "https://api.apify.com/v2"
+        logger.info("✅ SimpleRedditScraper initialized successfully")
     
     async def scrape_posts_from_db(self, brand_name: str = None, limit: int = 5):
         """Scrape Reddit posts from URLs in the database."""
-        print(f"🔍 Loading Reddit URLs from database...")
-        print("=" * 60)
+        logger.info(f"🔍 Loading Reddit URLs from database...")
+        logger.info("=" * 60)
         
         # Get URLs from database
         urls = await self._get_urls_from_db(brand_name, limit)
         
         if not urls:
-            print("❌ No URLs found in database")
+            logger.warning("❌ No URLs found in database")
             return
         
-        print(f"📊 Found {len(urls)} URLs to scrape")
+        logger.info(f"📊 Found {len(urls)} URLs to scrape")
         
         # Scrape each URL
         all_reddit_data = []
         
         async with httpx.AsyncClient() as client:
             for i, url_data in enumerate(urls, 1):
-                print(f"\n📡 Scraping {i}/{len(urls)}: {url_data['title'][:50]}...")
-                print(f"   URL: {url_data['url']}")
+                logger.info(f"\n📡 Scraping {i}/{len(urls)}: {url_data['title'][:50]}...")
+                logger.info(f"   URL: {url_data['url']}")
                 
                 try:
                     reddit_data = await self._scrape_reddit_url(client, url_data['url'])
                     
+                    logger.debug(f"Raw reddit_data type: {type(reddit_data)}")
+                    logger.debug(f"Raw reddit_data length: {len(reddit_data) if reddit_data else 0}")
+                    
                     if reddit_data:
+                        logger.debug(f"About to process {len(reddit_data)} items")
                         # Process and add metadata
                         processed_data = self._process_reddit_data(reddit_data, url_data['brand_name'])
+                        logger.debug(f"Processed data length: {len(processed_data)}")
                         all_reddit_data.extend(processed_data)
-                        print(f"   ✅ Found {len(processed_data)} items")
+                        logger.info(f"   ✅ Found {len(processed_data)} items")
                     else:
-                        print(f"   ❌ No data found")
+                        logger.warning(f"   ❌ No data found")
                         
                 except Exception as e:
-                    print(f"   ❌ Error: {e}")
+                    logger.error(f"   ❌ Error: {e}")
                     continue
         
-        print(f"\n📊 Total Reddit data collected: {len(all_reddit_data)} items")
+        logger.info(f"\n📊 Total Reddit data collected: {len(all_reddit_data)} items")
         
         if all_reddit_data:
             # Save to database
@@ -84,10 +104,11 @@ class SimpleRedditScraper:
             # Mark URLs as processed
             await self._mark_urls_as_processed(urls)
         else:
-            print("❌ No Reddit data collected")
+            logger.warning("❌ No Reddit data collected")
     
     async def _get_urls_from_db(self, brand_name: str = None, limit: int = 5) -> List[Dict[str, Any]]:
         """Get unprocessed URLs from brand_google_reddit table."""
+        logger.info(f"🔍 Getting URLs from database (brand: {brand_name}, limit: {limit})")
         try:
             query = self.supabase.table('brand_google_reddit').select('*')
             
@@ -101,18 +122,19 @@ class SimpleRedditScraper:
             response = query.execute()
             
             if response.data:
-                print(f"✅ Loaded {len(response.data)} unprocessed URLs from database")
+                logger.info(f"✅ Loaded {len(response.data)} unprocessed URLs from database")
                 return response.data
             else:
-                print("❌ No unprocessed URLs found in database")
+                logger.warning("❌ No unprocessed URLs found in database")
                 return []
                 
         except Exception as e:
-            print(f"❌ Error loading URLs from database: {e}")
+            logger.error(f"❌ Error loading URLs from database: {e}")
             return []
     
     async def _scrape_reddit_url(self, client: httpx.AsyncClient, url: str) -> List[Dict[str, Any]]:
         """Scrape a single Reddit URL using Apify."""
+        logger.info(f"🔍 Scraping Reddit URL: {url}")
         try:
             payload = {
                 "startUrls": [{"url": url}],
@@ -123,6 +145,8 @@ class SimpleRedditScraper:
                 "proxy": {"useApifyProxy": True}
             }
             
+            logger.debug(f"Apify payload: {json.dumps(payload, indent=2)}")
+            
             response = await client.post(
                 f"{self.apify_base_url}/acts/trudax~reddit-scraper-lite/run-sync-get-dataset-items",
                 headers={"Authorization": f"Bearer {self.apify_token}"},
@@ -130,22 +154,44 @@ class SimpleRedditScraper:
                 timeout=120.0  # Increased timeout for more comments
             )
             
-            if response.status_code == 200:
-                return response.json()
+            logger.info(f"Apify response status: {response.status_code}")
+            
+            if response.status_code in [200, 201]:
+                data = response.json()
+                logger.info(f"✅ Successfully scraped {len(data)} items from {url}")
+                return data
             else:
-                print(f"   ❌ Apify error: {response.status_code}")
+                logger.error(f"❌ Apify error: {response.status_code}")
+                logger.error(f"Response text: {response.text}")
                 return []
                 
         except Exception as e:
-            print(f"   ❌ Scraping error: {e}")
+            logger.error(f"❌ Scraping error: {e}")
             return []
     
     def _process_reddit_data(self, reddit_data: List[Dict[str, Any]], brand_name: str) -> List[Dict[str, Any]]:
         """Process Reddit data to match our simplified schema."""
+        logger.info(f"🔄 Processing {len(reddit_data)} Reddit items for brand: {brand_name}")
         processed_data = []
         
+        posts_count = 0
+        comments_count = 0
+        
+        # Debug: Log the first item to see the structure
+        if reddit_data:
+            logger.debug(f"First item structure: {list(reddit_data[0].keys())}")
+            logger.debug(f"First item dataType: {reddit_data[0].get('dataType')}")
+        
         for item in reddit_data:
-            if item.get('dataType') == 'post':
+            data_type = item.get('dataType')
+            logger.debug(f"Processing item with dataType: {data_type}")
+            
+            if data_type == 'post':
+                # Extract post body text (title + body)
+                title = item.get('title', '')
+                body = item.get('body', '')
+                full_text = f"{title}. {body}".strip()
+                
                 processed_item = {
                     'url': item.get('url', ''),
                     'post_id': item.get('id', ''),  # For posts, this is the post ID
@@ -157,11 +203,17 @@ class SimpleRedditScraper:
                     'up_votes': item.get('upVotes', 0),
                     'number_of_replies': item.get('numberOfReplies', 0),
                     'data_type': 'post',
-                    'brand_name': brand_name
+                    'brand_name': brand_name,
+                    'body': full_text  # Add the body text
                 }
                 processed_data.append(processed_item)
+                posts_count += 1
+                logger.debug(f"Processed post: {title[:50]}...")
                 
-            elif item.get('dataType') == 'comment':
+            elif data_type == 'comment':
+                # Extract comment body text
+                comment_body = item.get('body', '')
+                
                 processed_item = {
                     'url': item.get('url', ''),
                     'post_id': item.get('postId', ''),  # Links to parent post
@@ -173,14 +225,21 @@ class SimpleRedditScraper:
                     'up_votes': item.get('upVotes', 0),
                     'number_of_replies': item.get('numberOfReplies', 0),
                     'data_type': 'comment',
-                    'brand_name': brand_name
+                    'brand_name': brand_name,
+                    'body': comment_body  # Add the body text
                 }
                 processed_data.append(processed_item)
+                comments_count += 1
+                logger.debug(f"Processed comment: {comment_body[:50]}...")
+            else:
+                logger.warning(f"Unknown dataType: {data_type} for item: {item.get('id', 'unknown')}")
         
+        logger.info(f"✅ Processed {posts_count} posts and {comments_count} comments")
         return processed_data
     
     async def _mark_urls_as_processed(self, urls: List[Dict[str, Any]]):
         """Mark URLs as processed in the brand_google_reddit table."""
+        logger.info(f"🏷️ Marking {len(urls)} URLs as processed...")
         try:
             url_ids = [url['id'] for url in urls]
             
@@ -189,58 +248,66 @@ class SimpleRedditScraper:
             }).in_('id', url_ids).execute()
             
             if response.data:
-                print(f"✅ Marked {len(response.data)} URLs as processed")
+                logger.info(f"✅ Marked {len(response.data)} URLs as processed")
             else:
-                print("❌ Failed to mark URLs as processed")
+                logger.error("❌ Failed to mark URLs as processed")
                 
         except Exception as e:
-            print(f"❌ Error marking URLs as processed: {e}")
+            logger.error(f"❌ Error marking URLs as processed: {e}")
     
     async def _save_reddit_data(self, reddit_data: List[Dict[str, Any]]):
         """Save Reddit data to database."""
-        print(f"\n💾 Saving {len(reddit_data)} Reddit items to database...")
+        logger.info(f"💾 Saving {len(reddit_data)} Reddit items to database...")
         
         try:
+            # Log sample data structure
+            if reddit_data:
+                sample_item = reddit_data[0]
+                logger.debug(f"Sample item structure: {list(sample_item.keys())}")
+                logger.debug(f"Sample item: {json.dumps(sample_item, indent=2, default=str)}")
+            
             response = self.supabase.table('brand_reddit_posts_comments').insert(reddit_data).execute()
             
             if response.data:
-                print(f"✅ Successfully saved {len(response.data)} Reddit items to database")
+                logger.info(f"✅ Successfully saved {len(response.data)} Reddit items to database")
                 
                 # Show summary
                 posts_count = len([item for item in reddit_data if item['data_type'] == 'post'])
                 comments_count = len([item for item in reddit_data if item['data_type'] == 'comment'])
                 
-                print(f"\n📋 Summary:")
-                print(f"   Posts saved: {posts_count}")
-                print(f"   Comments saved: {comments_count}")
-                print(f"   Total items: {len(response.data)}")
-                print(f"   Table: brand_reddit_posts_comments")
+                logger.info(f"📋 Summary:")
+                logger.info(f"   Posts saved: {posts_count}")
+                logger.info(f"   Comments saved: {comments_count}")
+                logger.info(f"   Total items: {len(response.data)}")
+                logger.info(f"   Table: brand_reddit_posts_comments")
                 
                 # Show sample data
-                print(f"\n📄 Sample data:")
+                logger.info(f"📄 Sample data:")
                 for i, item in enumerate(response.data[:3], 1):
                     data_type = item.get('data_type', 'unknown')
                     community = item.get('community_name', 'Unknown')
                     upvotes = item.get('up_votes', 0)
-                    print(f"   {i}. [{data_type.upper()}] r/{community}")
-                    print(f"      Upvotes: {upvotes}")
-                    print(f"      Post ID: {item.get('post_id', 'N/A')}")
+                    logger.info(f"   {i}. [{data_type.upper()}] r/{community}")
+                    logger.info(f"      Upvotes: {upvotes}")
+                    logger.info(f"      Post ID: {item.get('post_id', 'N/A')}")
                     if item.get('parent_id'):
-                        print(f"      Parent ID: {item.get('parent_id')}")
-                    print()
+                        logger.info(f"      Parent ID: {item.get('parent_id')}")
+                    logger.info("")
                 
             else:
-                print("❌ No data returned from database insert")
+                logger.error("❌ No data returned from database insert")
+                logger.error(f"Response: {response}")
                 
         except Exception as e:
-            print(f"❌ Error saving to database: {e}")
-            print("   Make sure the 'brand_reddit_posts_comments' table exists with the correct schema")
+            logger.error(f"❌ Error saving to database: {e}")
+            logger.error(f"Error type: {type(e).__name__}")
+            logger.error("   Make sure the 'brand_reddit_posts_comments' table exists with the correct schema")
 
 
 async def main():
     """Main function."""
-    print("🚀 Simple Reddit Posts & Comments Scraper")
-    print("=" * 60)
+    logger.info("🚀 Simple Reddit Posts & Comments Scraper")
+    logger.info("=" * 60)
     
     try:
         # Initialize scraper

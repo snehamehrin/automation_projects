@@ -11,6 +11,7 @@ SERVER_PATH="~/workspace/projects/reddit_sentiment_analyzer"
 
 # Files to upload
 FILES=(
+    "process_all_urls.py"
     "test_process_one_url.py"
     "scrape_reddit_simple.py"
     "save_google_results_to_supabase.py"
@@ -21,6 +22,8 @@ FILES=(
     "check_processing_status.py"
     "simple_analysis_menu.py"
     "reddit_analyzer.py"
+    "test_single_reddit_scrape.py"
+    "requirements.txt"
     ".env"
 )
 

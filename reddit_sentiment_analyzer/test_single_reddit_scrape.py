@@ -7,6 +7,7 @@ import asyncio
 import os
 import sys
 import json
+import logging
 from pathlib import Path
 from datetime import datetime
 
@@ -20,11 +21,22 @@ load_dotenv()
 import httpx
 from supabase import create_client, Client
 
+# Setup logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('test_reddit_scrape.log'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
+
 
 async def test_single_reddit_scrape():
     """Test scraping a single Reddit URL."""
-    print("🔍 Testing Single Reddit URL Scraping")
-    print("=" * 60)
+    logger.info("🔍 Testing Single Reddit URL Scraping")
+    logger.info("=" * 60)
     
     # Get credentials
     apify_token = os.getenv("APIFY_API_KEY") or os.getenv("APIFY_TOKEN")
