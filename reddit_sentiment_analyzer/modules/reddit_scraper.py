@@ -17,7 +17,7 @@ class RedditScraper:
     def __init__(self):
         self.db = Database()
         self.apify_token = settings.APIFY_API_KEY
-        self.apify_actor = "trudax/reddit-scraper-lite"
+        self.apify_actor = "trudax~reddit-scraper-lite"
     
     async def scrape_all_urls(
         self, 
@@ -52,7 +52,8 @@ class RedditScraper:
     ) -> List[Dict[str, Any]]:
         """Scrape a single Reddit URL"""
         api_url = f"https://api.apify.com/v2/acts/{self.apify_actor}/run-sync-get-dataset-items"
-        headers = {"Authorization": f"Bearer {self.apify_token}"}
+        params = {"token": self.apify_token}
+        headers = {"Content-Type": "application/json"}
         payload = {
             "startUrls": [{"url": url}],
             "maxPosts": settings.MAX_POSTS_PER_URL,
@@ -62,8 +63,8 @@ class RedditScraper:
             "proxy": {"useApifyProxy": True}
         }
         
-        async with httpx.AsyncClient(timeout=180.0) as client:
-            response = await client.post(api_url, json=payload, headers=headers)
+        async with httpx.AsyncClient(timeout=310.0) as client:
+            response = await client.post(api_url, json=payload, headers=headers, params=params)
             response.raise_for_status()
             results = response.json()
         

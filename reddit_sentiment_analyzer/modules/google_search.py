@@ -17,7 +17,7 @@ class GoogleSearcher:
     def __init__(self):
         self.db = Database()
         self.apify_token = settings.APIFY_API_KEY
-        self.apify_actor = "apify/google-search-scraper"
+        self.apify_actor = "apify~google-search-scraper"
     
     async def search_reddit_urls(self, brand_name: str, category: str = "") -> List[str]:
         """Search Google for Reddit URLs about the brand"""
@@ -28,11 +28,12 @@ class GoogleSearcher:
         
         # Call Apify actor
         url = f"https://api.apify.com/v2/acts/{self.apify_actor}/run-sync-get-dataset-items"
-        headers = {"Authorization": f"Bearer {self.apify_token}"}
+        params = {"token": self.apify_token}
+        headers = {"Content-Type": "application/json"}
         payload = {"queries": search_query, "maxPagesPerQuery": 1}
         
-        async with httpx.AsyncClient(timeout=120.0) as client:
-            response = await client.post(url, json=payload, headers=headers)
+        async with httpx.AsyncClient(timeout=310.0) as client:
+            response = await client.post(url, json=payload, headers=headers, params=params)
             response.raise_for_status()
             results = response.json()
         
