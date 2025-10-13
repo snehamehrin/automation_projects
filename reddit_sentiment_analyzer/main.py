@@ -60,7 +60,7 @@ async def process_prospect(prospect: dict):
         console.print(f"[green]Found {len(reddit_urls)} Reddit URLs[/green]")
         
         # Step 3: Update prospect with URLs
-        await searcher.update_prospect_urls(prospect_id, reddit_urls)
+        await searcher.update_prospect_urls(prospect_id, reddit_urls, brand_name)
         
         # Step 4: Scrape Reddit Posts & Comments
         console.print(f"[yellow]Step 3: Scraping Reddit posts & comments[/yellow]")

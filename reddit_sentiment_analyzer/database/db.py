@@ -58,4 +58,9 @@ class Database:
         """Insert analysis result"""
         response = self.client.table('reddit_brand_analysis_results').insert(result).execute()
         return response.data[0]
+    
+    async def mark_urls_processed(self, prospect_id: str, urls: List[str]) -> None:
+        """Mark URLs as processed after scraping"""
+        for url in urls:
+            self.client.table('brand_google_reddit').update({'processed': True}).eq('prospect_id', prospect_id).eq('url', url).execute()
 

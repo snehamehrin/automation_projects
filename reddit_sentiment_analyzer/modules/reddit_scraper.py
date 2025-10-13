@@ -21,18 +21,21 @@ class RedditScraper:
     
     async def scrape_all_urls(
         self, 
-        urls: List[str], 
+        urls: List[Dict[str, str]], 
         brand_name: str, 
         prospect_id: str
     ) -> List[Dict[str, Any]]:
         """Scrape all Reddit URLs and store in database"""
         all_data = []
+        scraped_urls = []
         
-        for url in urls:
+        for url_info in urls:
+            url = url_info.get('url', '') if isinstance(url_info, dict) else url_info
             logger.info(f"Scraping: {url}")
             try:
                 data = await self._scrape_url(url, brand_name, prospect_id)
                 all_data.extend(data)
+                scraped_urls.append(url)
             except Exception as e:
                 logger.error(f"Error scraping {url}: {str(e)}")
                 continue
@@ -41,6 +44,11 @@ class RedditScraper:
         if all_data:
             await self.db.insert_posts_comments(all_data)
             logger.info(f"Stored {len(all_data)} posts/comments for {brand_name}")
+        
+        # Mark URLs as processed
+        if scraped_urls:
+            await self.db.mark_urls_processed(prospect_id, scraped_urls)
+            logger.info(f"Marked {len(scraped_urls)} URLs as processed")
         
         return all_data
     

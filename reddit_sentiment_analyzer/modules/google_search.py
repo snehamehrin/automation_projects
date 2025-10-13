@@ -19,7 +19,7 @@ class GoogleSearcher:
         self.apify_token = settings.APIFY_API_KEY
         self.apify_actor = "apify~google-search-scraper"
     
-    async def search_reddit_urls(self, brand_name: str, category: str = "") -> List[str]:
+    async def search_reddit_urls(self, brand_name: str, category: str = "") -> List[Dict[str, str]]:
         """Search Google for Reddit URLs about the brand"""
         # Construct search query - use reddit:brandname format as requested
         search_query = f"reddit:{brand_name}"
@@ -37,14 +37,20 @@ class GoogleSearcher:
             response.raise_for_status()
             results = response.json()
         
-        # Extract Reddit URLs
+        # Extract Reddit URLs with metadata
         reddit_urls = []
+        seen_urls = set()
         for result in results:
             organic_results = result.get('organicResults', [])
             for item in organic_results:
                 url = item.get('url', '')
-                if 'reddit.com/r/' in url and url not in reddit_urls:
-                    reddit_urls.append(url)
+                if 'reddit.com/r/' in url and url not in seen_urls:
+                    reddit_urls.append({
+                        'url': url,
+                        'title': item.get('title', 'Reddit Discussion'),
+                        'description': item.get('description', '')
+                    })
+                    seen_urls.add(url)
         
         # Limit to MAX_REDDIT_URLS
         reddit_urls = reddit_urls[:settings.MAX_REDDIT_URLS]
@@ -52,15 +58,18 @@ class GoogleSearcher:
         logger.info(f"Found {len(reddit_urls)} Reddit URLs")
         return reddit_urls
     
-    async def update_prospect_urls(self, prospect_id: str, urls: List[str]) -> None:
+    async def update_prospect_urls(self, prospect_id: str, urls: List[Dict[str, str]], brand_name: str) -> None:
         """Store Reddit URLs in database"""
         url_data = [
             {
                 'prospect_id': prospect_id,
-                'url': url,
-                'status': 'pending'
+                'brand_name': brand_name,
+                'url': url_info.get('url', ''),
+                'title': url_info.get('title', 'Reddit Discussion'),
+                'description': url_info.get('description', ''),
+                'processed': False
             }
-            for url in urls
+            for url_info in urls
         ]
         await self.db.insert_reddit_urls(url_data)
         logger.info(f"Stored {len(urls)} URLs for prospect {prospect_id}")
