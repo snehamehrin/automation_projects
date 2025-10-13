@@ -8,14 +8,14 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     # Database
-    SUPABASE_URL: str = "https://dummy.supabase.co"
-    SUPABASE_KEY: str = "dummy-key"
+    SUPABASE_URL: str
+    SUPABASE_KEY: str
     
     # Apify
-    APIFY_API_KEY: str = "dummy-token"
+    APIFY_API_KEY: str
     
     # OpenAI
-    OPENAI_API_KEY: str = "dummy-key"
+    OPENAI_API_KEY: str
     
     # Optional settings
     MAX_REDDIT_URLS: int = 10
@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         case_sensitive = True
-        extra = "ignore"  # Ignore extra environment variables
+        extra = "ignore"
 
 
 @lru_cache()
