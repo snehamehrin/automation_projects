@@ -380,11 +380,46 @@ Provide a key insight and HTML report. Return as JSON with keys: keyInsight, htm
             logger.error(f"Error saving analysis results: {e}")
             return False
     
-    async def run_complete_workflow(self, brand_name: str = "Knix"):
+    def show_menu(self):
+        """Show the main menu options."""
+        print("🚀 End-to-End Sentiment Analysis Workflow")
+        print("=" * 50)
+        print("Options:")
+        print("1. Enter a brand name")
+        print("2. Run analysis for all prospects")
+        print("3. Exit")
+        
+        # Use default choice for testing
+        choice = "1"  # Enter a brand name
+        print(f"\nUsing choice: {choice} (Enter a brand name)")
+        return choice
+    
+    async def run_complete_workflow(self):
         """Run the complete end-to-end workflow."""
         logger.info("🚀 Starting Complete End-to-End Workflow")
         logger.info("=" * 60)
         
+        # Show menu and get user choice
+        choice = self.show_menu()
+        
+        if choice == "3":
+            print("👋 Goodbye!")
+            return
+        
+        if choice == "1":
+            # Use default brand name for testing
+            brand_name = "Knix"  # We know this exists
+            print(f"Using brand name: {brand_name}")
+            
+            # Run workflow for single brand
+            await self.run_workflow_for_brand(brand_name)
+            
+        elif choice == "2":
+            # Run workflow for all prospects
+            await self.run_workflow_for_all_prospects()
+    
+    async def run_workflow_for_brand(self, brand_name: str):
+        """Run workflow for a single brand."""
         # Step 1: Search and select prospect
         prospect = self.search_and_select_prospect(brand_name)
         if not prospect:
@@ -438,13 +473,98 @@ Provide a key insight and HTML report. Return as JSON with keys: keyInsight, htm
             logger.warning("❌ No Reddit data available for analysis")
         
         logger.info("🎉 End-to-end workflow completed!")
+    
+    async def run_workflow_for_all_prospects(self):
+        """Run workflow for all prospects."""
+        logger.info("🚀 Running workflow for all prospects")
+        
+        try:
+            # Get all prospects
+            response = self.supabase.table('prospects').select('*').execute()
+            
+            if not response.data:
+                logger.error("❌ No prospects found")
+                return
+            
+            prospects = response.data
+            logger.info(f"📊 Found {len(prospects)} prospects to process")
+            
+            for i, prospect in enumerate(prospects, 1):
+                prospect_id = prospect.get('id')
+                brand_name = prospect.get('brand_name')
+                
+                print(f"\n🔄 Processing {i}/{len(prospects)}: {brand_name}")
+                print("-" * 40)
+                
+                # Run workflow for this prospect
+                await self.run_workflow_for_prospect(prospect)
+                
+                # Ask if user wants to continue
+                if i < len(prospects):
+                    continue_choice = input(f"\nContinue to next prospect? (y/n): ").strip().lower()
+                    if continue_choice not in ['y', 'yes']:
+                        print("⏹️ Stopping workflow")
+                        break
+            
+            print(f"\n🎉 Completed workflow for all prospects!")
+            
+        except Exception as e:
+            logger.error(f"Error in all prospects workflow: {e}")
+    
+    async def run_workflow_for_prospect(self, prospect: Dict[str, Any]):
+        """Run workflow for a specific prospect."""
+        prospect_id = prospect.get('id')
+        prospect_brand_name = prospect.get('brand_name')
+        
+        logger.info(f"✅ Processing Prospect: {prospect_brand_name} (ID: {prospect_id})")
+        
+        # Update tables with prospect_id
+        self.update_tables_with_prospect_id(prospect_id, prospect_brand_name)
+        
+        # Get URLs to scrape
+        urls_to_scrape = await self.get_reddit_urls_to_scrape(prospect_id, prospect_brand_name)
+        
+        if urls_to_scrape:
+            # Scrape Reddit data
+            logger.info(f"🔍 Scraping {len(urls_to_scrape)} Reddit URLs...")
+            
+            all_reddit_data = []
+            processed_url_ids = []
+            
+            async with httpx.AsyncClient() as client:
+                for url_data in urls_to_scrape:
+                    url = url_data['url']
+                    url_id = url_data['id']
+                    
+                    reddit_data = await self.scrape_reddit_url(client, url)
+                    if reddit_data:
+                        processed_data = self.process_reddit_data(reddit_data, prospect_brand_name, prospect_id)
+                        all_reddit_data.extend(processed_data)
+                        processed_url_ids.append(url_id)
+            
+            # Save Reddit data
+            if all_reddit_data:
+                await self.save_reddit_data(all_reddit_data)
+                await self.mark_urls_as_processed(processed_url_ids)
+        
+        # Get Reddit data for analysis
+        reddit_data_for_analysis = await self.get_reddit_data_for_analysis(prospect_id, limit=10)
+        
+        if reddit_data_for_analysis:
+            # Generate AI analysis
+            analysis_result = await self.generate_ai_analysis(reddit_data_for_analysis, prospect_brand_name)
+            
+            # Save analysis results
+            await self.save_analysis_results(analysis_result, prospect_id)
+        else:
+            logger.warning(f"❌ No Reddit data available for analysis for {prospect_brand_name}")
 
 
 async def main():
     """Main function."""
     try:
         workflow = EndToEndWorkflow()
-        await workflow.run_complete_workflow("Knix")
+        await workflow.run_complete_workflow()
     except Exception as e:
         logger.error(f"Error: {e}")
 
