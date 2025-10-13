@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: reddit-analyzer
-  labels:
-    name: reddit-analyzer
-    app: reddit-sentiment-analyzer
