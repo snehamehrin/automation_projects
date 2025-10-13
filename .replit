@@ -23,7 +23,16 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd reddit_sentiment_analyzer && python main.py"
+args = "cd reddit_sentiment_analyzer && streamlit run app.py --server.port=5000 --server.address=0.0.0.0"
+waitForPort = 5000
 
 [workflows.workflow.metadata]
-outputType = "console"
+outputType = "webview"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 45587
+externalPort = 3000

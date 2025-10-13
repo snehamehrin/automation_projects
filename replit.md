@@ -34,9 +34,12 @@ reddit_sentiment_analyzer/
 ## Recent Changes
 
 - **2025-10-13**: Initial Replit setup
-  - Installed Python 3.11 and dependencies
+  - Installed Python 3.11 and dependencies (including Streamlit)
+  - Created web UI for step-by-step pipeline execution
   - Fixed Apify API integration (updated to use tilde format: `apify~actor-name`)
   - Fixed API token authentication (changed from Bearer header to query parameter)
+  - Fixed database schema alignment (replaced `status` with `processed` boolean)
+  - Added automatic URL processing tracking
   - Configured environment variables for all API keys
   - Updated .gitignore to exclude Python virtual environments
 
@@ -60,18 +63,23 @@ Edit these in `.env` if needed:
 
 ## How to Use
 
-The application runs as an interactive CLI:
+The application provides both a web UI and CLI interface:
 
+### Web UI (Recommended)
 1. Click the **Run** button or use the workflow panel
-2. Choose to analyze:
-   - All prospects in the database, or
-   - A single brand (enter brand name when prompted)
-3. The tool will automatically:
-   - Search for Reddit discussions
-   - Scrape posts and comments
-   - Clean and process the data
-   - Generate AI-powered sentiment analysis
-   - Store results in Supabase
+2. The Streamlit web interface will open showing a step-by-step pipeline:
+   - **Step 1: Brand Selection** - Load prospects or create new ones
+   - **Step 2: Search Reddit URLs** - Find Reddit discussions about the brand
+   - **Step 3: Scrape Posts & Comments** - Extract data from Reddit
+   - **Step 4: Process Data** - Clean and filter the data
+   - **Step 5: Run Analysis** - Generate AI-powered sentiment insights
+3. Run steps individually or skip steps as needed
+
+### CLI Interface (Alternative)
+Run the CLI version with:
+```bash
+cd reddit_sentiment_analyzer && python main.py
+```
 
 ## Database Tables
 
@@ -97,8 +105,18 @@ python -m pytest tests/
 - **Modular design**: Each module is independently testable
 - **Rate limiting**: Built-in support for API rate limits
 
+## Data Persistence
+
+All data is automatically saved to Supabase as you progress through the pipeline:
+
+- **Reddit URLs**: Saved to `brand_google_reddit` (with `processed` flag)
+- **Posts & Comments**: Saved to `brand_reddit_posts_comments`
+- **Analysis Results**: Saved to `reddit_brand_analysis_results`
+
+You can work on multiple brands and all data will be preserved in the database.
+
 ## User Preferences
 
-- CLI-based workflow (no web interface)
-- Interactive prompts for user input
-- Rich console output with tables and colors
+- Web UI for step-by-step control
+- Data persists across sessions in Supabase
+- Can process multiple brands without data loss
