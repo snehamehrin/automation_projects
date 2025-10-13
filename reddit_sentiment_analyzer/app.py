@@ -41,8 +41,10 @@ st.markdown("Run brand sentiment analysis step-by-step")
 st.sidebar.title("Pipeline Steps")
 step = st.sidebar.radio(
     "Select Step",
-    ["1. Brand Selection", "2. Search Reddit URLs", "3. Scrape Posts & Comments", "4. Process Data", "5. Run Analysis"]
+    ["1. Brand Selection", "2. Search Reddit URLs", "3. Scrape Posts & Comments", "4. Process Data", "5. Run Analysis", "📊 View Database"]
 )
+
+st.sidebar.info("💾 All data is automatically saved to Supabase and persists across sessions")
 
 # Step 1: Brand Selection
 if step == "1. Brand Selection":
@@ -83,7 +85,13 @@ if step == "1. Brand Selection":
                     p for p in st.session_state.prospects 
                     if p['brand_name'] == selected_brand
                 )
-                st.success(f"Selected: {selected_brand}")
+                # Clear session data to prevent data corruption when switching prospects
+                st.session_state.reddit_urls = []
+                st.session_state.scraped_data = []
+                if 'cleaned_data' in st.session_state:
+                    del st.session_state.cleaned_data
+                st.session_state.analysis_result = None
+                st.success(f"✅ Selected: {selected_brand} (session data cleared for fresh analysis)")
         
         elif option == "Create new":
             brand_name = st.text_input("Brand Name")
@@ -93,7 +101,13 @@ if step == "1. Brand Selection":
                         selector = BrandSelector()
                         prospect = asyncio.run(selector.get_or_create_prospect(brand_name))
                         st.session_state.selected_prospect = prospect
-                        st.success(f"Created: {brand_name}")
+                        # Clear session data for new prospect
+                        st.session_state.reddit_urls = []
+                        st.session_state.scraped_data = []
+                        if 'cleaned_data' in st.session_state:
+                            del st.session_state.cleaned_data
+                        st.session_state.analysis_result = None
+                        st.success(f"✅ Created: {brand_name}")
                     except Exception as e:
                         st.error(f"Error: {str(e)}")
     
@@ -293,6 +307,73 @@ elif step == "5. Run Analysis":
             # Full analysis
             with st.expander("View Full Analysis"):
                 st.json(result)
+
+# Step 6: View Database
+elif step == "📊 View Database":
+    st.header("📊 View Stored Data")
+    
+    st.markdown("### All data is stored in Supabase and persists permanently")
+    
+    from database.db import Database
+    db = Database()
+    
+    tab1, tab2, tab3 = st.tabs(["Reddit URLs", "Posts & Comments", "Analysis Results"])
+    
+    with tab1:
+        st.subheader("Stored Reddit URLs")
+        if st.session_state.selected_prospect:
+            prospect_id = st.session_state.selected_prospect['id']
+            urls = asyncio.run(db.get_reddit_urls(prospect_id))
+            
+            if urls:
+                st.write(f"**{len(urls)} URLs stored for {st.session_state.selected_prospect['brand_name']}**")
+                for url in urls:
+                    status = "✅ Processed" if url.get('processed') else "⏳ Pending"
+                    with st.expander(f"{status} - {url.get('title', 'No title')}"):
+                        st.write(f"**URL:** {url.get('url')}")
+                        st.write(f"**Description:** {url.get('description', 'N/A')}")
+                        st.write(f"**Created:** {url.get('created_at', 'N/A')}")
+            else:
+                st.info("No URLs stored yet for this prospect")
+        else:
+            st.warning("Select a prospect first")
+    
+    with tab2:
+        st.subheader("Posts & Comments Summary")
+        if st.session_state.selected_prospect:
+            prospect_id = st.session_state.selected_prospect['id']
+            try:
+                # Get count from database
+                response = db.client.table('brand_reddit_posts_comments').select('*', count='exact').eq('prospect_id', prospect_id).execute()
+                count = len(response.data)
+                st.metric("Total Posts & Comments", count)
+                
+                if count > 0:
+                    st.write("Sample data:")
+                    st.dataframe(response.data[:10], use_container_width=True)
+            except Exception as e:
+                st.error(f"Error: {str(e)}")
+        else:
+            st.warning("Select a prospect first")
+    
+    with tab3:
+        st.subheader("Analysis Results")
+        if st.session_state.selected_prospect:
+            prospect_id = st.session_state.selected_prospect['id']
+            try:
+                response = db.client.table('reddit_brand_analysis_results').select('*').eq('prospect_id', prospect_id).execute()
+                
+                if response.data:
+                    st.write(f"**{len(response.data)} analysis results stored**")
+                    for result in response.data:
+                        with st.expander(f"Analysis from {result.get('created_at', 'N/A')}"):
+                            st.json(result)
+                else:
+                    st.info("No analysis results yet")
+            except Exception as e:
+                st.error(f"Error: {str(e)}")
+        else:
+            st.warning("Select a prospect first")
 
 # Status bar at bottom
 st.divider()
