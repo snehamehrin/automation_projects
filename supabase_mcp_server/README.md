@@ -16,62 +16,67 @@ A Model Context Protocol (MCP) server that provides intelligent access to your S
 supabase_mcp_server/
 ├── server.py              # Main MCP server entry point
 ├── run_server.sh          # Server startup script
+├── requirements.txt       # Dependencies
+├── README.md              # This file
 ├── src/
 │   └── supabase_mcp/
 │       ├── config.py      # Configuration management
 │       ├── mcp_tools.py   # MCP tool implementations
 │       └── supabase_client.py  # Supabase client wrapper
-├── examples/              # Example usage scripts
 ├── tests/                 # Test suite
-├── tests_backup/          # Additional test files
-├── docs/                  # Documentation
 ├── venv/                  # Virtual environment
 └── .env                   # Environment variables (not in git)
 ```
 
 ## Quick Start
 
-### 1. Install Dependencies
+### Option A: Run Locally (Current Setup)
 
-```bash
-# Activate virtual environment
-source venv/bin/activate
-
-# Dependencies are already installed
-```
-
-### 2. Configure Environment
-
-Your `.env` file should contain:
-```env
-SUPABASE_URL=your_supabase_url
-SUPABASE_KEY=your_supabase_key
-```
-
-### 3. Test the Server
-
+1. **Test the Server**
 ```bash
 source venv/bin/activate
-python tests_backup/test_mcp_server.py
+pytest tests/
 ```
 
-### 4. Connect to Claude Desktop
-
-The server is already configured in Claude Desktop at:
-`~/Library/Application Support/Claude/claude_desktop_config.json`
-
-Configuration:
+2. **Claude Desktop Config** (already configured)
 ```json
 {
   "mcpServers": {
     "supabase": {
-      "command": "/path/to/your/project/run_server.sh"
+      "command": "/path/to/run_server.sh"
     }
   }
 }
 ```
 
-Restart Claude Desktop to connect.
+### Option B: Deploy to VPS (Recommended)
+
+1. **Edit deploy.sh** with your VPS details
+2. **Run deployment**
+```bash
+./deploy.sh
+```
+
+3. **Configure .env on VPS**
+```bash
+ssh user@your_vps
+cd ~/supabase_mcp_server
+nano .env  # Add SUPABASE_URL and SUPABASE_KEY
+sudo systemctl restart supabase-mcp
+```
+
+4. **Update Claude Desktop Config**
+```json
+{
+  "mcpServers": {
+    "supabase": {
+      "url": "http://your_vps_ip:8000/sse"
+    }
+  }
+}
+```
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
 
 ## Available MCP Tools
 
@@ -122,12 +127,7 @@ Once connected to Claude Desktop, you can ask:
 ### Database Connection Issues
 - Verify Supabase URL and key in `.env`
 - Check Supabase project is active
-- Test connection: `python tests_backup/test_mcp_server.py`
-
-## Additional Documentation
-
-- See `docs/` folder for detailed guides
-- Check `examples/` for usage patterns
+- Run tests: `pytest tests/`
 
 ## License
 
