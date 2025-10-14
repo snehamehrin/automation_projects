@@ -10,7 +10,14 @@ import os
 # Add the parent directory to the path so we can import our modules
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from src.supabase_mcp.mcp_tools import DynamicSupabaseMCPTools
+# Note: This demo requires the MCP package to be installed
+# For now, we'll use a simplified version that doesn't require MCP
+try:
+    from src.supabase_mcp.mcp_tools import DynamicSupabaseMCPTools
+    MCP_AVAILABLE = True
+except ImportError:
+    print("⚠️  MCP package not available. Using simplified demo.")
+    MCP_AVAILABLE = False
 
 
 async def demo_dynamic_discovery():
@@ -18,6 +25,11 @@ async def demo_dynamic_discovery():
     
     print("🚀 Dynamic Supabase MCP Server Demo")
     print("=" * 50)
+    
+    if not MCP_AVAILABLE:
+        print("❌ MCP package not available. Please install with: pip install mcp")
+        print("   For now, run: python examples/simple_demo.py")
+        return
     
     # Initialize the tools
     tools = DynamicSupabaseMCPTools()

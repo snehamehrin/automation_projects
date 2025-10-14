@@ -12,8 +12,20 @@ install: ## Install production dependencies
 install-dev: ## Install development dependencies
 	pip install -e ".[dev]"
 
-test: ## Run tests
-	pytest
+test: ## Run all tests
+	python run_tests.py
+
+test-core: ## Run core tests only
+	python test_core.py
+
+test-quick: ## Run quick tests only
+	python test_quick.py
+
+test-unit: ## Run unit tests only
+	pytest tests/ -v
+
+test-integration: ## Run integration tests only
+	pytest tests/integration/ -v
 
 test-cov: ## Run tests with coverage
 	pytest --cov=src/supabase_mcp --cov-report=html --cov-report=term

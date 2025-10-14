@@ -1,124 +1,134 @@
-# Dynamic Supabase MCP Server
+# Supabase MCP Server
 
-An intelligent Model Context Protocol (MCP) server that provides Claude with dynamic discovery and flexible access to Supabase database operations. No hardcoded queries needed - it automatically discovers your database structure and adapts to your schema.
+A Model Context Protocol (MCP) server that provides intelligent access to your Supabase database through natural language queries in Claude Desktop.
 
-## 🚀 Features
+## Features
 
-- **🧠 Dynamic Discovery**: Automatically discovers your database structure
-- **🔍 Intelligent Search**: Smart text detection and cross-table searching
-- **📊 Schema Analysis**: Analyzes table structure and data types automatically
-- **🎯 Flexible Querying**: Multiple filter types and search options
-- **🔄 Cross-Table Search**: Search across multiple tables simultaneously
-- **💡 Smart Suggestions**: Provides helpful next steps and troubleshooting
-- **🔒 Secure Connection**: Environment-based configuration with RLS support
-- **🧪 Full Testing**: Comprehensive test suite with examples
+- **Dynamic Table Discovery** - Automatically discover and query any table in your database
+- **Intelligent Search** - Search across multiple tables with natural language
+- **Flexible Querying** - Filter, sort, and limit results with ease
+- **Schema Inspection** - Understand your data structure on the fly
+- **CRUD Operations** - Insert, update, and delete data through MCP tools
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 supabase_mcp_server/
-├── src/supabase_mcp/          # Main package
-│   ├── __init__.py
-│   ├── config.py              # Configuration management
-│   ├── supabase_client.py     # Supabase client wrapper
-│   └── mcp_tools.py          # MCP tools implementation
-├── tests/                     # Test suite
-│   ├── test_supabase_client.py
-│   └── test_mcp_tools.py
-├── docs/                      # Documentation
-│   ├── API.md
-│   └── SETUP.md
-├── examples/                  # Usage examples
-│   └── basic_usage.py
-├── server.py                  # Main server entry point
-├── requirements.txt           # Dependencies
-├── pyproject.toml            # Package configuration
-└── README.md                 # This file
+├── server.py              # Main MCP server entry point
+├── run_server.sh          # Server startup script
+├── src/
+│   └── supabase_mcp/
+│       ├── config.py      # Configuration management
+│       ├── mcp_tools.py   # MCP tool implementations
+│       └── supabase_client.py  # Supabase client wrapper
+├── examples/              # Example usage scripts
+├── tests/                 # Test suite
+├── tests_backup/          # Additional test files
+├── docs/                  # Documentation
+├── venv/                  # Virtual environment
+└── .env                   # Environment variables (not in git)
 ```
 
-## ⚡ Quick Start
+## Quick Start
 
-1. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Configure environment:**
-   ```bash
-   cp env.example .env
-   # Edit .env with your Supabase credentials
-   ```
-
-3. **Run the server:**
-   ```bash
-   python server.py
-   ```
-
-## 🔧 Available Tools
-
-### 🗂️ `list_tables`
-**Dynamic Discovery**: Automatically finds all tables in your database
-- Discovers schema without hardcoding
-- Provides fallback guidance
-- Suggests common table patterns
-
-### 📋 `describe_table`
-**Schema Analysis**: Intelligently analyzes table structure
-- Examines sample data to determine types
-- Shows example values for each column
-- Provides query suggestions
-
-### 🔍 `query_table`
-**Flexible Querying**: Advanced search with multiple filter types
-- Text search with case-insensitive matching
-- Exact match filters
-- Score/range filtering
-- Custom sorting and limits
-
-### 🔄 `search_across_tables`
-**Cross-Table Search**: Search multiple tables simultaneously
-- Automatically detects text columns
-- Removes duplicates intelligently
-- Provides comprehensive results
-
-### ➕ `insert_data` / `update_data` / `delete_data`
-**Data Manipulation**: Full CRUD operations with error handling
-
-## 📚 Documentation
-
-- **[Setup Guide](docs/SETUP.md)** - Detailed installation and configuration
-- **[API Documentation](docs/API.md)** - Complete API reference
-- **[Dynamic Discovery Guide](docs/DYNAMIC_DISCOVERY.md)** - How the intelligent discovery works
-- **[Examples](examples/)** - Usage examples and patterns
-
-## 🧪 Testing
+### 1. Install Dependencies
 
 ```bash
-# Install development dependencies
-pip install -e ".[dev]"
+# Activate virtual environment
+source venv/bin/activate
 
-# Run tests
-pytest
-
-# Run with coverage
-pytest --cov=src/supabase_mcp
+# Dependencies are already installed
 ```
 
-## 🔒 Security
+### 2. Configure Environment
 
-- Uses Supabase's built-in Row Level Security (RLS)
-- Supports both anon and service role keys
-- All operations respect Supabase permissions
-- Environment-based configuration
+Your `.env` file should contain:
+```env
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
+```
 
-## 🤝 Contributing
+### 3. Test the Server
 
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Submit a pull request
+```bash
+source venv/bin/activate
+python tests_backup/test_mcp_server.py
+```
 
-## 📄 License
+### 4. Connect to Claude Desktop
 
-MIT License - see LICENSE file for details
+The server is already configured in Claude Desktop at:
+`~/Library/Application Support/Claude/claude_desktop_config.json`
+
+Configuration:
+```json
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "/path/to/your/project/run_server.sh"
+    }
+  }
+}
+```
+
+Restart Claude Desktop to connect.
+
+## Available MCP Tools
+
+### 1. list_tables
+List all tables in your Supabase database.
+
+### 2. describe_table
+Get the schema and structure of a specific table.
+
+**Example:** "Describe the brand_reddit_posts_comments table"
+
+### 3. query_table
+Query a table with flexible filters, sorting, and limits.
+
+**Example:** "Show me the top 10 posts from the reddit_posts table"
+
+### 4. search_across_tables
+Search for a term across multiple tables at once.
+
+**Example:** "Search for 'Knix' across all tables"
+
+### 5. insert_data
+Insert new records into a table.
+
+### 6. update_data
+Update existing records based on filters.
+
+### 7. delete_data
+Delete records from a table based on filters.
+
+## Usage Examples
+
+Once connected to Claude Desktop, you can ask:
+
+- "What tables are in my database?"
+- "Show me the schema for the users table"
+- "Find all posts about 'bras' in the reddit_posts table"
+- "Search for 'Knix' across all tables"
+- "Show me the top 20 highest scoring posts"
+
+## Troubleshooting
+
+### Server Won't Connect
+- Check Claude Desktop logs: `~/Library/Logs/Claude/mcp*.log`
+- Verify `.env` file has correct credentials
+- Ensure virtual environment is activated
+
+### Database Connection Issues
+- Verify Supabase URL and key in `.env`
+- Check Supabase project is active
+- Test connection: `python tests_backup/test_mcp_server.py`
+
+## Additional Documentation
+
+- See `docs/` folder for detailed guides
+- Check `examples/` for usage patterns
+
+## License
+
+MIT

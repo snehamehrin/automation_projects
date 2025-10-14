@@ -4,10 +4,10 @@ Tests for MCP tools
 
 import pytest
 from unittest.mock import Mock, patch, AsyncMock
-from src.supabase_mcp.mcp_tools import SupabaseMCPTools
+from src.supabase_mcp.mcp_tools import DynamicSupabaseMCPTools
 
 
-class TestSupabaseMCPTools:
+class TestDynamicSupabaseMCPTools:
     """Test cases for SupabaseMCPTools"""
     
     @pytest.fixture
@@ -15,7 +15,7 @@ class TestSupabaseMCPTools:
         """Create tools instance with mocked dependencies"""
         with patch('src.supabase_mcp.mcp_tools.SupabaseClient') as mock_client:
             mock_client.return_value = Mock()
-            tools = SupabaseMCPTools()
+            tools = DynamicSupabaseMCPTools()
             tools.supabase = mock_client.return_value
             return tools
     
@@ -26,10 +26,10 @@ class TestSupabaseMCPTools:
         tools.supabase.query_table = AsyncMock(return_value=[{"id": 1, "name": "test"}])
         
         # Test tool call
-        result = await tools._query_table("test_table", filters={"id": 1})
+        result = await tools._query_table_impl({"table_name": "test_table", "filters": {"id": 1}})
         
-        assert "Query successful" in result
-        assert "Found 1 rows" in result
+        assert "Query successful" in result[0].text
+        assert "Found 1 rows" in result[0].text
         tools.supabase.query_table.assert_called_once_with("test_table", "*", {"id": 1}, None)
     
     @pytest.mark.asyncio
@@ -39,9 +39,9 @@ class TestSupabaseMCPTools:
         tools.supabase.insert_data = AsyncMock(return_value={"id": 1, "name": "test"})
         
         # Test tool call
-        result = await tools._insert_data("test_table", {"name": "test"})
+        result = await tools._insert_data_impl({"table_name": "test_table", "data": {"name": "test"}})
         
-        assert "Insert successful" in result
+        assert "Insert successful" in result[0].text
         tools.supabase.insert_data.assert_called_once_with("test_table", {"name": "test"})
     
     @pytest.mark.asyncio
@@ -51,10 +51,10 @@ class TestSupabaseMCPTools:
         tools.supabase.update_data = AsyncMock(return_value=[{"id": 1, "name": "updated"}])
         
         # Test tool call
-        result = await tools._update_data("test_table", {"name": "updated"}, {"id": 1})
+        result = await tools._update_data_impl({"table_name": "test_table", "data": {"name": "updated"}, "filters": {"id": 1}})
         
-        assert "Update successful" in result
-        assert "Updated 1 rows" in result
+        assert "Update successful" in result[0].text
+        assert "Updated 1 rows" in result[0].text
         tools.supabase.update_data.assert_called_once_with("test_table", {"name": "updated"}, {"id": 1})
     
     @pytest.mark.asyncio
@@ -64,10 +64,10 @@ class TestSupabaseMCPTools:
         tools.supabase.delete_data = AsyncMock(return_value=[])
         
         # Test tool call
-        result = await tools._delete_data("test_table", {"id": 1})
+        result = await tools._delete_data_impl({"table_name": "test_table", "filters": {"id": 1}})
         
-        assert "Delete successful" in result
-        assert "Deleted 0 rows" in result
+        assert "Delete successful" in result[0].text
+        assert "Deleted 0 rows" in result[0].text
         tools.supabase.delete_data.assert_called_once_with("test_table", {"id": 1})
     
     @pytest.mark.asyncio
@@ -77,7 +77,7 @@ class TestSupabaseMCPTools:
         tools.supabase.query_table = AsyncMock(side_effect=Exception("Database error"))
         
         # Test tool call
-        result = await tools._query_table("test_table")
+        result = await tools._query_table_impl({"table_name": "test_table"})
         
-        assert "Query failed" in result
-        assert "Database error" in result
+        assert "Query failed" in result[0].text
+        assert "Database error" in result[0].text
