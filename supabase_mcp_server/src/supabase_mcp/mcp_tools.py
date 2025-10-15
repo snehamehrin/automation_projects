@@ -215,14 +215,14 @@ To enable automatic table discovery, please run this SQL in your Supabase SQL Ed
 
 ```sql
 CREATE OR REPLACE FUNCTION get_tables()
-RETURNS TABLE(table_name text)
+RETURNS TABLE(schema_name text, table_name text)
 LANGUAGE sql
 SECURITY DEFINER
 AS $$
-  SELECT tablename::text
+  SELECT schemaname::text, tablename::text
   FROM pg_tables
-  WHERE schemaname = 'public'
-  ORDER BY tablename;
+  WHERE schemaname NOT IN ('pg_catalog', 'information_schema')
+  ORDER BY schemaname, tablename;
 $$;
 ```
 
@@ -238,8 +238,20 @@ After creating this function, I'll be able to automatically discover all your ta
             # Format results if RPC works
             tables = response.data
             result = f"# Found {len(tables)} tables in your Supabase database:\n\n"
+
+            # Group by schema
+            schemas = {}
             for table in tables:
-                result += f"- **{table}**\n"
+                schema = table.get('schema_name', 'public')
+                table_name = table.get('table_name', table)
+                if schema not in schemas:
+                    schemas[schema] = []
+                schemas[schema].append(table_name)
+
+            for schema, table_list in schemas.items():
+                result += f"\n## Schema: `{schema}`\n"
+                for table_name in table_list:
+                    result += f"- **{table_name}** (use as `{schema}.{table_name}`)\n"
             
             result += "\n**Next steps:**\n"
             result += "- Use `describe_table` to see the structure of any table\n"
@@ -259,14 +271,14 @@ This likely means the `get_tables()` function hasn't been created yet.
 
 ```sql
 CREATE OR REPLACE FUNCTION get_tables()
-RETURNS TABLE(table_name text)
+RETURNS TABLE(schema_name text, table_name text)
 LANGUAGE sql
 SECURITY DEFINER
 AS $$
-  SELECT tablename::text
+  SELECT schemaname::text, tablename::text
   FROM pg_tables
-  WHERE schemaname = 'public'
-  ORDER BY tablename;
+  WHERE schemaname NOT IN ('pg_catalog', 'information_schema')
+  ORDER BY schemaname, tablename;
 $$;
 ```
 
@@ -422,7 +434,16 @@ $$;
             try:
                 response = self.supabase.client.rpc('get_tables').execute()
                 if response.data:
-                    tables = [table['table_name'] for table in response.data]
+                    # Handle both old format (table_name only) and new format (schema + table)
+                    tables = []
+                    for table in response.data:
+                        if isinstance(table, dict):
+                            schema = table.get('schema_name', 'public')
+                            table_name = table.get('table_name')
+                            # Use schema-qualified name
+                            tables.append(f"{schema}.{table_name}" if schema != 'public' else table_name)
+                        else:
+                            tables.append(table)
                 else:
                     return [TextContent(type="text", text="# No Tables Specified\n\nPlease provide a list of table names to search, or create the `get_tables()` function in Supabase for automatic discovery.\n\n**Example:** Use `search_across_tables` with `tables: ['your_table_1', 'your_table_2']`")]
             except Exception as e:
