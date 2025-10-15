@@ -1,0 +1,8 @@
+● supabase-mcp.service - Supabase MCP Server
+     Loaded: loaded (]8;;file://srv910590/etc/systemd/system/supabase-mcp.service/etc/systemd/system/supabase-mcp.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: activating (auto-restart) (Result: exit-code) since Wed 2025-10-15 00:27:04 UTC; 7s ago
+    Process: 483715 ExecStart=/root/workspace/projects/automation_projects/supabase_mcp_server/venv/bin/python server_remote.py [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 483715 (code=exited, status=1/FAILURE)
+        CPU: 608ms
+
+Oct 15 00:27:04 srv910590 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185msupabase-mcp.service: Failed with result 'exit-code'.[0m
