@@ -105,7 +105,7 @@ EOF
 # Restart Traefik
 echo "🔄 Restarting Traefik..."
 cd /root
-docker-compose restart traefik
+docker compose restart traefik
 
 # Wait for Traefik to start
 echo "⏳ Waiting for Traefik to initialize..."
