@@ -1,0 +1,23 @@
+http:
+  routers:
+    mcp-server:
+      rule: "Host(`productalchemy.net`) && PathPrefix(`/mcp`)"
+      service: mcp-server
+      entryPoints:
+        - websecure
+      tls:
+        certResolver: mytlschallenge
+
+    mcp-server-root:
+      rule: "Host(`mcp.productalchemy.net`)"
+      service: mcp-server
+      entryPoints:
+        - websecure
+      tls:
+        certResolver: mytlschallenge
+
+  services:
+    mcp-server:
+      loadBalancer:
+        servers:
+          - url: "http://localhost:8000"
