@@ -209,36 +209,29 @@ class DynamicSupabaseMCPTools:
             
             # If RPC doesn't exist, provide helpful guidance
             if not response.data:
-                result = """# Available Tables in Your Supabase Database
+                result = """# Table Discovery Not Configured
 
-To discover tables automatically, you can set up a simple Supabase function:
+To enable automatic table discovery, please run this SQL in your Supabase SQL Editor:
 
 ```sql
 CREATE OR REPLACE FUNCTION get_tables()
 RETURNS TABLE(table_name text)
 LANGUAGE sql
+SECURITY DEFINER
 AS $$
-  SELECT tablename::text 
-  FROM pg_tables 
-  WHERE schemaname = 'public';
+  SELECT tablename::text
+  FROM pg_tables
+  WHERE schemaname = 'public'
+  ORDER BY tablename;
 $$;
 ```
 
-**Common tables in your database likely include:**
-- reddit_posts
-- reddit_comments  
-- brand_reddit_posts_comments
-- reddit_brand_analysis_results
-- prospects
-- google_results
-- (and others you've created)
+After creating this function, I'll be able to automatically discover all your tables.
 
-**Next steps:**
-1. Use `describe_table` to see the structure of any table
+**Alternative:** If you know your table names, you can:
+1. Use `describe_table` with the table name to see its structure
 2. Use `query_table` to search within specific tables
-3. Use `search_across_tables` to search multiple tables at once
-
-**Example:** "Describe the reddit_posts table" or "Search for 'Knix' across all tables"
+3. Use `search_across_tables` with specific table names
 """
                 return [TextContent(type="text", text=result)]
             
@@ -256,23 +249,31 @@ $$;
             return [TextContent(type="text", text=result)]
             
         except Exception as e:
-            result = f"""# Table Discovery
+            result = f"""# Table Discovery Error
 
-**Error accessing table list:** {str(e)}
+**Error:** {str(e)}
 
-**Manual approach:** Please provide table names and I'll work with those.
+This likely means the `get_tables()` function hasn't been created yet.
 
-**Common tables to try:**
-- reddit_posts
-- reddit_comments
-- brand_reddit_posts_comments
-- reddit_brand_analysis_results
-- prospects
+**To fix this, run this SQL in your Supabase SQL Editor:**
 
-**Next steps:**
-1. Use `describe_table` with a table name
+```sql
+CREATE OR REPLACE FUNCTION get_tables()
+RETURNS TABLE(table_name text)
+LANGUAGE sql
+SECURITY DEFINER
+AS $$
+  SELECT tablename::text
+  FROM pg_tables
+  WHERE schemaname = 'public'
+  ORDER BY tablename;
+$$;
+```
+
+**Manual approach:** If you know your table names:
+1. Use `describe_table` with the table name
 2. Use `query_table` to search within tables
-3. Use `search_across_tables` to search multiple tables
+3. Use `search_across_tables` with specific table names
 """
             return [TextContent(type="text", text=result)]
     
@@ -413,8 +414,19 @@ $$;
     async def _search_across_tables_impl(self, args: Dict[str, Any]) -> List[TextContent]:
         """Search across multiple tables with intelligent text detection"""
         search_term = args["search_term"]
-        tables = args.get("tables", ["reddit_posts", "reddit_comments", "brand_reddit_posts_comments"])
+        tables = args.get("tables")
         limit_per_table = args.get("limit_per_table", 10)
+
+        # If no tables specified, try to get them dynamically
+        if not tables:
+            try:
+                response = self.supabase.client.rpc('get_tables').execute()
+                if response.data:
+                    tables = [table['table_name'] for table in response.data]
+                else:
+                    return [TextContent(type="text", text="# No Tables Specified\n\nPlease provide a list of table names to search, or create the `get_tables()` function in Supabase for automatic discovery.\n\n**Example:** Use `search_across_tables` with `tables: ['your_table_1', 'your_table_2']`")]
+            except Exception as e:
+                return [TextContent(type="text", text=f"# Cannot Auto-Discover Tables\n\n**Error:** {str(e)}\n\nPlease provide table names explicitly using the `tables` parameter.\n\n**Example:** `search_across_tables` with `tables: ['your_table_1', 'your_table_2']`")]
         
         result = f"# Search Results for '{search_term}' across tables\n\n"
         result += f"**Searching in:** {', '.join(tables)}\n\n"
