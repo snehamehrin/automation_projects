@@ -9,16 +9,20 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     """Application settings loaded from environment variables"""
-    
+
     # Supabase Configuration
     supabase_url: str
     supabase_key: str
     supabase_service_role_key: Optional[str] = None
-    
+
+    # Server Configuration
+    host: str = "0.0.0.0"
+    port: int = 8000
+
     # Optional settings
     max_query_limit: int = 1000
     default_timeout: int = 30
-    
+
     class Config:
         env_file = ".env"
         case_sensitive = False
