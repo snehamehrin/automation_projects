@@ -295,7 +295,7 @@ $$;
         
         try:
             # Try to query the table and inspect the first few rows
-            response = self.supabase.client.table(table_name).select("*").limit(3).execute()
+            response = self.supabase._get_table(table_name).select("*").limit(3).execute()
             
             if not response.data or len(response.data) == 0:
                 return [TextContent(type="text", text=f"# Table: {table_name}\n\n**Status:** Table exists but is empty. Cannot determine schema.")]
@@ -358,7 +358,7 @@ $$;
         
         try:
             # Build query
-            query = self.supabase.client.table(table_name).select("*")
+            query = self.supabase._get_table(table_name).select("*")
             
             # Text search
             if search_column and search_term:
@@ -457,7 +457,7 @@ $$;
         for table_name in tables:
             try:
                 # Get a sample to find text columns
-                sample = self.supabase.client.table(table_name).select("*").limit(1).execute()
+                sample = self.supabase._get_table(table_name).select("*").limit(1).execute()
                 
                 if not sample.data:
                     result += f"## {table_name}: No data found\n\n"
@@ -479,7 +479,7 @@ $$;
                 all_results = []
                 for column in text_columns:
                     try:
-                        query = self.supabase.client.table(table_name).select("*").ilike(column, f"%{search_term}%").limit(limit_per_table)
+                        query = self.supabase._get_table(table_name).select("*").ilike(column, f"%{search_term}%").limit(limit_per_table)
                         response = query.execute()
                         all_results.extend(response.data)
                     except Exception as e:
